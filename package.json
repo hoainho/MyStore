@@ -1,0 +1,22 @@
+{
+  "name": "tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoainho/MyStore.git"
+  },
+  "author": "remalw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoainho/MyStore/issues"
+  },
+  "homepage": "https://github.com/hoainho/MyStore#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}

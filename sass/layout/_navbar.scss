@@ -1,0 +1,97 @@
+.navbar{
+    font-size: 1rem;
+    padding: 0 !important;
+    &-content{
+        position: relative;
+        background-color: $color-grey;
+        width: 100%;
+        &--top{
+            border-bottom: 1px solid $color-divider;
+            &_features{
+                width: 100%;
+                &__row{
+                    margin: 0 10rem;
+                    &___left{
+                        font-size: 0.7rem;
+                        color: $color-divider;
+                        padding: 0 1rem;
+                        &-content{
+                            padding-top: .8rem;
+                        }
+                    }
+                    &___right{
+                        font-size: .8rem;
+                        color: $color-divider;
+                        &-content{
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content:end;
+                            justify-content: end;
+                            &--info{
+                                padding-top: .8rem;
+                                &_list{
+                                    display: flex;
+                                    flex-direction: row-reverse;
+                                    justify-content:center;
+                                    justify-content: center;
+                                    list-style-type: none;
+                                    margin-bottom: 0rem !important;
+                                }
+                                &_item{
+                                    padding:0 1rem;
+                                    border-right:1px solid $color-divider ;
+                                }
+                                &_link,
+                                &_link:link,
+                                &_link:active,
+                                &_link:visited{
+                                    text-decoration: none;
+                                    color: $color-divider;
+                                    &:hover{
+                                        color: $color-primary;
+                                    }
+                                }
+                            }
+                            &--language{
+                                padding: .8rem 0 1rem 1rem;
+                                &_btn{
+                                    cursor: pointer;
+                                    &:active,
+                                    &:link,
+                                    &:hover{
+                                        color:$color-primary;
+                                    }
+                                }
+                                &_list{
+                                    list-style-type: none;
+                                    width: 30%;
+                                    margin-bottom: 0rem !important;
+                                    border-bottom: 1px solid $color-grey;
+                                    border-left: 1px solid $color-grey;
+                                    border-right: 1px solid $color-grey;
+                                    min-width: 5rem;
+                                    top: 95% !important;
+                                    left: 5% !important;
+                                }
+                                &_link{
+                                    margin: 0 !important;
+                                    padding: 0 !important;
+                                }
+                                &_item{
+                                    text-align: center !important;
+                                    text-decoration: none !important;
+                                    font-size: .8rem !important;
+                                    color: $color-divider !important;
+                                    &:hover{
+                                        color: $color-primary !important;
+                                        background-color: $color-grey !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
