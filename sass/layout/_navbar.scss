@@ -5,10 +5,11 @@
         position: relative;
         background-color: $color-grey;
         width: 100%;
+        //Top
         &--top{
-            border-bottom: 1px solid $color-divider;
             &_features{
                 width: 100%;
+                border-bottom: 1px solid rgba($color-divider, .5);
                 &__row{
                     margin: 0 10rem;
                     &___left{
@@ -86,6 +87,97 @@
                                         color: $color-primary !important;
                                         background-color: $color-grey !important;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //Header
+        &--header{
+            margin:0 10rem;
+            &_main{
+                width: 100%;
+                height: 12vh;
+                &__features{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 100%;
+                    &___logo{
+                        position: relative;
+                        left: 0;    
+                        bottom: 20%;
+                        width: 100%;
+                        height: 100%;
+                        &-box{
+                            width: 25% !important;
+                            height: 100% !important;
+                            position: relative;
+                        }
+                    }
+                    &___control{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        &-cart{
+                            display: flex;
+                            flex-direction: row;
+                            position: absolute;
+                            right: 0;
+                        }
+                        &-search{
+                            position: relative;
+                            left: 0;
+                            width: 80%;
+                            height: 100%;
+                            &--box{
+                                display: flex;
+                                flex-direction: row;
+                                position: relative;
+                                top: 35%;
+                                height: 30%;
+                                width: 100%;
+                                &_select{
+                                    width: 18%;
+                                    height: 100%;
+                                    &__choose{
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: .3rem;
+                                        &-options{
+                                            width: 100%;
+                                            height: 100%;
+                                            color: $color-textdark;
+                                            &:hover{
+                                                background-color: $color-primary !important;
+                                                color: $color-textdark !important;
+                                            }
+                                            &:checked{
+                                                background-color: $color-primary !important;
+                                            }
+                                            &:visited{
+                                                background-color: $color-primary !important;
+                                            }
+                                            .select-items {
+                                                background-color: $color-primary !important;
+                                            }
+                                            &--details{
+                                                background-color: $color-primary !important; 
+                                                &:hover{
+                                                    
+                                                    background-color: $color-primary !important;
+                                                }  
+                                            }
+                                        }
+                                    }
+                                }
+                                &_input{
+
+                                }
+                                &_button{
+
                                 }
                             }
                         }

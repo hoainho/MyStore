@@ -58,15 +58,53 @@
                     <div class="navbar-content--header_main">
                         <div class="row navbar-content--header_main__features">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 row navbar-content--header_main__features___logo">
-                                <div class="navbar-content--header_main__features___logo-box">
-                                    <img src="" alt="" class="navbar-content--header_main__features___logo-box--picture">
+                                <div class="logo navbar-content--header_main__features___logo-box">
+                                    <span class="logo-letter rem-navbar--inner_left__logoHeader" data-letter="ℜ">ℜ</span>
                                 </div>
                             </div>
                             <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 row navbar-content--header_main__features___control">
+                                <div class="navbar-content--header_main__features___control-search">
+                                    <form action="" method="get" id="mini-search" class="navbar-content--header_main__features___control-search--box">
+                                        <div class="navbar-content--header_main__features___control-search--box_select">
+                                            <select name="choose-categories" id="choose-options" class="navbar-content--header_main__features___control-search--box_select__choose">
+                                                <option class="navbar-content--header_main__features___control-search--box_select__choose-options" value="all"><span class="navbar-content--header_main__features___control-search--box_select__choose-options--details">All Categories</span>  </option>
+                                                <option class="navbar-content--header_main__features___control-search--box_select__choose-options" value="top"> Top 10 </option>
+                                                <option class="navbar-content--header_main__features___control-search--box_select__choose-options" value="best"> BestSeller </option>
+                                                <option class="navbar-content--header_main__features___control-search--box_select__choose-options" value="headphone"> Headphone </option>
+                                                <option class="navbar-content--header_main__features___control-search--box_select__choose-options" value="keyboard"> Keyboard </option>
+                                            </select>
+                                        </div>
+                                        <div class="navbar-content--header_main__features___control-search--box_input">
+                                            <input id="search" 
+                                            type="text" 
+                                            name="q" 
+                                            value="" 
+                                            placeholder="Search here..." 
+                                            class="input-text navbar-content--header_main__features___control-search--box_input__enter" 
+                                            maxlength="128" 
+                                            role="combobox" 
+                                            aria-haspopup="false" 
+                                            aria-autocomplete="both" 
+                                            aria-expanded="false" 
+                                            autocomplete="off">
+                                        </div>
+                                        <div class="navbar-content--header_main__features___control-search--box_button">
+                                            <button class="navbar-content--header_main__features___control-search--box_button__search">Search</button>
+                                        </div>
+                                    </form>
+                                </div>
                                 <div class="navbar-content--header_main__features___control-cart">
-                                    <div class="navbar-content--header_main__features___control-cart-icon">
+                                    <div class="navbar-content--header_main__features___control-cart--icon">
                                         <i class="fas fa-cart-plus"></i>
                                     </div>
+                                    <span class="navbar-content--header_main__features___control-cart--name">
+                                        <span class="navbar-content--header_main__features___control-cart--name_details">
+                                            Mycart:
+                                        </span>
+                                        <span class="navbar-content--header_main__features___control-cart--name_total">
+                                            $0.00
+                                        </span>
+                                    </span>
                                 </div>
                             </div>
                             
