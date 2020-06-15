@@ -101,8 +101,56 @@
             .navbar-content--header_main__features___control-cart {
               display: flex;
               flex-direction: row;
-              position: absolute;
-              right: 0; }
+              justify-content: center;
+              justify-items: center;
+              position: relative;
+              left: 3rem;
+              width: 20%;
+              height: 100%;
+              color: #ff7e00;
+              text-align: center; }
+              .navbar-content--header_main__features___control-cart--icon {
+                position: relative;
+                top: 25%;
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+                border: 1.5px double rgba(149, 152, 155, 0.5);
+                border-radius: 50%;
+                margin: 0 1rem; }
+                .navbar-content--header_main__features___control-cart--icon_details {
+                  font-size: 1rem;
+                  width: 100%;
+                  height: 100%;
+                  position: relative;
+                  top: 35%; }
+                .navbar-content--header_main__features___control-cart--icon_numbers {
+                  position: absolute;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  bottom: 1.8rem;
+                  left: 1.8rem;
+                  font-size: .9rem;
+                  color: #242424;
+                  border: 1px solid #fff;
+                  border-radius: 50%;
+                  background-color: #fff;
+                  text-align: center; }
+              .navbar-content--header_main__features___control-cart--name {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 25%; }
+                .navbar-content--header_main__features___control-cart--name_details {
+                  color: #fff;
+                  letter-spacing: 2px;
+                  margin-bottom: .1rem; }
+                .navbar-content--header_main__features___control-cart--name_total {
+                  color: #95989b; }
             .navbar-content--header_main__features___control-search {
               position: relative;
               left: 0;
@@ -112,33 +160,60 @@
                 display: flex;
                 flex-direction: row;
                 position: relative;
-                top: 35%;
-                height: 30%;
+                top: 25%;
+                height: 50%;
                 width: 100%; }
                 .navbar-content--header_main__features___control-search--box_select {
                   width: 18%;
-                  height: 100%; }
+                  height: 100%;
+                  z-index: 1; }
                   .navbar-content--header_main__features___control-search--box_select__choose {
                     width: 100%;
                     height: 100%;
-                    margin: .3rem; }
+                    position: relative;
+                    appearance: none;
+                    background-color: transparent;
+                    text-align-last: center;
+                    outline: none;
+                    border: none;
+                    border-radius: 30px 0 0 30px; }
                     .navbar-content--header_main__features___control-search--box_select__choose-options {
                       width: 100%;
                       height: 100%;
                       color: #242424; }
-                      .navbar-content--header_main__features___control-search--box_select__choose-options:hover {
-                        background-color: #ff7e00 !important;
-                        color: #242424 !important; }
-                      .navbar-content--header_main__features___control-search--box_select__choose-options:checked {
-                        background-color: #ff7e00 !important; }
-                      .navbar-content--header_main__features___control-search--box_select__choose-options:visited {
-                        background-color: #ff7e00 !important; }
-                      .navbar-content--header_main__features___control-search--box_select__choose-options .select-items {
-                        background-color: #ff7e00 !important; }
-                      .navbar-content--header_main__features___control-search--box_select__choose-options--details {
-                        background-color: #ff7e00 !important; }
-                        .navbar-content--header_main__features___control-search--box_select__choose-options--details:hover {
-                          background-color: #ff7e00 !important; }
+                      .navbar-content--header_main__features___control-search--box_select__choose-options:checked, .navbar-content--header_main__features___control-search--box_select__choose-options:hover {
+                        background-color: #1538ea;
+                        color: #242424 !important;
+                        border: none; }
+                .navbar-content--header_main__features___control-search--box_input {
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 30px;
+                  right: 7.2rem;
+                  width: 100%;
+                  height: 100%; }
+                  .navbar-content--header_main__features___control-search--box_input__enter {
+                    color: #7e7e7e;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 20%;
+                    border: none;
+                    outline: none; }
+                .navbar-content--header_main__features___control-search--box_button {
+                  position: absolute;
+                  overflow: hidden;
+                  width: 12%;
+                  height: 100%;
+                  right: 3rem; }
+                  .navbar-content--header_main__features___control-search--box_button__search {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    background-color: #ff7e00;
+                    text-align: center;
+                    outline: none;
+                    border: none;
+                    border-radius: 0 30px 30px 0; }
 
 .logo-letter {
   display: inline-block;
