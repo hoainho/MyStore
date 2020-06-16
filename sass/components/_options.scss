@@ -37,7 +37,8 @@
     padding: 0px 14px;
     outline: none;
     background-color: transparent;
-    cursor: pointer
+    cursor: pointer;
+    z-index: 2;
 }
 
 #options-view-button
@@ -52,6 +53,8 @@
     cursor: pointer;
     z-index: 3;
 }
+
+
 
 #selected-value
 {
@@ -111,10 +114,12 @@
     right: 37rem;
     left: 0;
     width: 20%;
-    height: 32vh;
+    z-index: 2;
+    height: 0vh;
     margin: 0 auto;
     background-color: transparent;
     border-radius: 4px;
+    transition: 1s ease 0.3s;
 }
 
 #options-view-button:checked ~ #options
@@ -123,7 +128,7 @@
     top: 3rem;
     right: 37rem;
     left: 0;
-
+    height: 32vh;
     border: 1px solid $color-divider;
     border-color:$color-divider;
     background-color: $color-white;
@@ -152,6 +157,7 @@
     padding: 12px 0;
 }
 
+
 .label
 {
     display: none;
@@ -162,7 +168,8 @@
 #options-view-button:checked ~ #options .label
 {
     display: block;
-    padding: 12px 14px;    
+    padding: 12px 14px; 
+    z-index: 2;   
 }
 
 .s-c
@@ -251,13 +258,13 @@ input[type="radio"]
     font-size: 1rem;
     overflow: hidden;
     text-align-last: center;
+    z-index: 2;
 }
 
 .option input[type="radio"]:checked ~ .opt-val
 {
     opacity: 1;
     transform: scale(1);
-    padding: 1rem;
 }
 
 .option input[type="radio"]:checked ~ i

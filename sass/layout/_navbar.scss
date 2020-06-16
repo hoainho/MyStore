@@ -224,7 +224,7 @@
                                 &_select{
                                     width: 19.5%;
                                     height: 100%;
-                                    z-index: 1;
+                                    z-index: 2;
                                     
                                 }
                                 &_input{
@@ -269,6 +269,9 @@
         }
         &--menu{
             margin:0 10rem;
+            &__container{
+                height: 8vh;
+            }
             &_menutoggle{
                 border: 1px solid $color-divider;
                 padding: 0 1rem;
@@ -296,9 +299,17 @@
                     }
                     &-checkbox{
                         position: absolute;
-                        top:  0;
-                        width: 90%;
-                        height: 5vh;
+                        font-size: .5rem;
+                        top: .5rem;
+                        width: 81%;
+                        height: 5.4vh;
+                        opacity: 0;
+                        cursor: pointer;
+                        &:checked ~ .navbar-content--menu_menutoggle__container___list{
+                            height: 48vh ;
+                            opacity: 1 ;
+
+                        }
                     }
                     &___list{
                         overflow: hidden;
@@ -310,11 +321,11 @@
                         position: relative;
                         bottom: 1rem;
                         width: 100%;
-                        height: 0; // hidden
+                        height: 0vh; // hidden
                         opacity: 0; // hidden
                         padding: .4rem;
                         border: 2px solid $color-primary;
-                        transition: all 1s;
+                        transition: all 0.8s ease-in-out 0.3s;
                     }
                     &___item{
                         padding: .8rem 0;
@@ -322,7 +333,7 @@
                     }
                     &___link{
                         text-decoration: none;
-                        color: $color-white;
+                        color: $color-textdark;
                         font-size: 1rem;
                         &:active,
                         &:link,
@@ -335,9 +346,123 @@
             }
             &_menuNavbar{
                 border: 1px solid $color-divider;
+                height: 100%;
+                &__sticky
+                {
+
+                    &___list{
+                        position: relative;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        justify-content: center;
+                        list-style-type: none;
+                        z-index: 1;
+                    }
+                    &___item{
+                        margin: .5rem;
+                        &-features {
+                            opacity: 0;
+                            position: relative;
+                            left: 50px;
+                            transition: .5s ease-in-out .3s;
+                            list-style-type: none;
+                            &--link{
+                                text-decoration: none;
+                                color: $color-white;
+                                
+                                &:hover,
+                                &:active,
+                                &:link{
+                                    text-decoration: none;
+                                    color: $color-primary;
+                                }
+                                
+                                
+                            }
+                            &--item{
+                                padding: 1rem 0rem;
+                                border-bottom: 1px solid $color-divider;
+                                &:hover{
+                                    background-color:rgba(transparent, .1) ;
+                                }
+
+                                &:hover &_producttype{
+                                    opacity: 1;
+                                    left: 6rem;
+                                }
+                                &_producttype{
+                                    opacity: 0;
+                                    position: absolute;
+                                    transition: .5s ease-in-out .3s;
+                                    left: 12rem;
+                                    width: 100%;
+                                    list-style-type: none;
+                                    height: 100%;
+                                    &-item{
+
+                                    }
+                                    &-link{
+                                        text-decoration: none;
+                                        color: $color-white;
+                                        &:hover,
+                                        &:active,
+                                        &:link{
+                                            text-decoration: none;
+                                            color: $color-primary;
+                                        }
+                                    }
+                                }
+                                &:hover &_sortproduct{
+                                    opacity: 1;
+                                    left: 6rem;
+                                }
+                                &_sortproduct{
+                                    opacity: 0;
+                                    position: absolute;
+                                    transition: .5s ease-in-out .3s;
+                                    left: 12rem;
+                                    width: 100%;
+                                    list-style-type: none;
+                                    height: 100%;
+                                    &-item{
+
+                                    }
+                                    &-link{
+                                        text-decoration: none;
+                                        color: $color-white;
+                                        &:hover,
+                                        &:active,
+                                        &:link{
+                                            text-decoration: none;
+                                            color: $color-primary;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    &___itemFeatures:hover &___item-features{
+                        opacity: 1;
+                        left: 0;
+                    }
+                    &___link{
+                        text-decoration: none;
+                        color: $color-white;
+                        
+                        &:hover,
+                        &:active,
+                        &:link{
+                            text-decoration: none;
+                            color: $color-primary;
+                        }
+                    }
+                }
             }
             &_contact{
                 border: 1px solid $color-divider;
+                height: 100%;
             }
         }
     } 
