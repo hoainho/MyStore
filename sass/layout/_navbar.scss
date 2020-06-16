@@ -267,5 +267,78 @@
                 }
             }
         }
-    }
+        &--menu{
+            margin:0 10rem;
+            &_menutoggle{
+                border: 1px solid $color-divider;
+                padding: 0 1rem;
+                &__container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    justify-items: center;
+                    padding: .5rem .2rem;
+                    &-button{
+                        position: relative;
+                        font-size: 1.3rem;
+                        color: $color-white;
+                        background-color: $color-primary;
+                        padding: .5rem 1rem;
+                        border-radius: .2rem;
+                        width: 100%;
+                        cursor: pointer;
+                        &--icon{
+                            position: relative;
+                            left:2rem;
+                            font-size: .8rem;
+                        }
+                        
+                    }
+                    &-checkbox{
+                        position: absolute;
+                        top:  0;
+                        width: 90%;
+                        height: 5vh;
+                    }
+                    &___list{
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        justify-items: center;
+                        list-style-type: none;
+                        position: relative;
+                        bottom: 1rem;
+                        width: 100%;
+                        height: 0; // hidden
+                        opacity: 0; // hidden
+                        padding: .4rem;
+                        border: 2px solid $color-primary;
+                        transition: all 1s;
+                    }
+                    &___item{
+                        padding: .8rem 0;
+                        border-bottom: 1px solid rgba($color-divider, .5);
+                    }
+                    &___link{
+                        text-decoration: none;
+                        color: $color-white;
+                        font-size: 1rem;
+                        &:active,
+                        &:link,
+                        &:hover{
+                            text-decoration: none;
+                            color: rgba($color-primary, .8);
+                        }
+                    }
+                }
+            }
+            &_menuNavbar{
+                border: 1px solid $color-divider;
+            }
+            &_contact{
+                border: 1px solid $color-divider;
+            }
+        }
+    } 
 }
