@@ -5,8 +5,10 @@
   box-sizing: border-box; }
 
 .is-active {
-  height: 100% !important;
   opacity: 1 !important; }
+
+.is-zindex {
+  z-index: 9; }
 
 .navbar {
   font-size: 1rem;
@@ -195,7 +197,7 @@
                 .navbar-content--header_main__features___control-search--box_select {
                   width: 19.5%;
                   height: 100%;
-                  z-index: 1; }
+                  z-index: 2; }
                 .navbar-content--header_main__features___control-search--box_input {
                   position: relative;
                   overflow: hidden;
@@ -228,6 +230,8 @@
                     border-radius: 0 30px 30px 0; }
     .navbar-content--menu {
       margin: 0 10rem; }
+      .navbar-content--menu__container {
+        height: 8vh; }
       .navbar-content--menu_menutoggle {
         border: 1px solid #95989b;
         padding: 0 1rem; }
@@ -252,9 +256,15 @@
               font-size: .8rem; }
           .navbar-content--menu_menutoggle__container-checkbox {
             position: absolute;
-            top: 0;
-            width: 90%;
-            height: 5vh; }
+            font-size: .5rem;
+            top: .5rem;
+            width: 81%;
+            height: 5.4vh;
+            opacity: 0;
+            cursor: pointer; }
+            .navbar-content--menu_menutoggle__container-checkbox:checked ~ .navbar-content--menu_menutoggle__container___list {
+              height: 48vh;
+              opacity: 1; }
           .navbar-content--menu_menutoggle__container___list {
             overflow: hidden;
             display: flex;
@@ -265,25 +275,97 @@
             position: relative;
             bottom: 1rem;
             width: 100%;
-            height: 0;
+            height: 0vh;
             opacity: 0;
             padding: .4rem;
             border: 2px solid #ff7e00;
-            transition: all 1s; }
+            transition: all 0.8s ease-in-out 0.3s; }
           .navbar-content--menu_menutoggle__container___item {
             padding: .8rem 0;
             border-bottom: 1px solid rgba(149, 152, 155, 0.5); }
           .navbar-content--menu_menutoggle__container___link {
             text-decoration: none;
-            color: #fff;
+            color: #242424;
             font-size: 1rem; }
             .navbar-content--menu_menutoggle__container___link:active, .navbar-content--menu_menutoggle__container___link:link, .navbar-content--menu_menutoggle__container___link:hover {
               text-decoration: none;
               color: rgba(255, 126, 0, 0.8); }
       .navbar-content--menu_menuNavbar {
-        border: 1px solid #95989b; }
+        border: 1px solid #95989b;
+        height: 100%; }
+        .navbar-content--menu_menuNavbar__sticky___list {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          justify-content: center;
+          list-style-type: none;
+          z-index: 1; }
+        .navbar-content--menu_menuNavbar__sticky___item {
+          margin: .5rem; }
+          .navbar-content--menu_menuNavbar__sticky___item-features {
+            opacity: 0;
+            position: relative;
+            left: 50px;
+            transition: .5s ease-in-out .3s;
+            list-style-type: none; }
+            .navbar-content--menu_menuNavbar__sticky___item-features--link {
+              text-decoration: none;
+              color: #fff; }
+              .navbar-content--menu_menuNavbar__sticky___item-features--link:hover, .navbar-content--menu_menuNavbar__sticky___item-features--link:active, .navbar-content--menu_menuNavbar__sticky___item-features--link:link {
+                text-decoration: none;
+                color: #ff7e00; }
+            .navbar-content--menu_menuNavbar__sticky___item-features--item {
+              padding: 1rem 0rem;
+              border-bottom: 1px solid #95989b; }
+              .navbar-content--menu_menuNavbar__sticky___item-features--item:hover {
+                background-color: rgba(0, 0, 0, 0.1); }
+              .navbar-content--menu_menuNavbar__sticky___item-features--item:hover .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype {
+                opacity: 1;
+                left: 6rem; }
+              .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype {
+                opacity: 0;
+                position: absolute;
+                transition: .5s ease-in-out .3s;
+                left: 12rem;
+                width: 100%;
+                list-style-type: none;
+                height: 100%; }
+                .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link {
+                  text-decoration: none;
+                  color: #fff; }
+                  .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link:hover, .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link:active, .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link:link {
+                    text-decoration: none;
+                    color: #ff7e00; }
+              .navbar-content--menu_menuNavbar__sticky___item-features--item:hover .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct {
+                opacity: 1;
+                left: 6rem; }
+              .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct {
+                opacity: 0;
+                position: absolute;
+                transition: .5s ease-in-out .3s;
+                left: 12rem;
+                width: 100%;
+                list-style-type: none;
+                height: 100%; }
+                .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link {
+                  text-decoration: none;
+                  color: #fff; }
+                  .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:hover, .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:active, .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:link {
+                    text-decoration: none;
+                    color: #ff7e00; }
+        .navbar-content--menu_menuNavbar__sticky___itemFeatures:hover .navbar-content--menu_menuNavbar__sticky___item-features {
+          opacity: 1;
+          left: 0; }
+        .navbar-content--menu_menuNavbar__sticky___link {
+          text-decoration: none;
+          color: #fff; }
+          .navbar-content--menu_menuNavbar__sticky___link:hover, .navbar-content--menu_menuNavbar__sticky___link:active, .navbar-content--menu_menuNavbar__sticky___link:link {
+            text-decoration: none;
+            color: #ff7e00; }
       .navbar-content--menu_contact {
-        border: 1px solid #95989b; }
+        border: 1px solid #95989b;
+        height: 100%; }
 
 .logo-letter {
   display: inline-block;
@@ -352,7 +434,8 @@
   padding: 0px 14px;
   outline: none;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 #options-view-button {
   position: relative;
@@ -408,16 +491,19 @@
   right: 37rem;
   left: 0;
   width: 20%;
-  height: 32vh;
+  z-index: 2;
+  height: 0vh;
   margin: 0 auto;
   background-color: transparent;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: 1s ease 0.3s; }
 
 #options-view-button:checked ~ #options {
   position: absolute;
   top: 3rem;
   right: 37rem;
   left: 0;
+  height: 32vh;
   border: 1px solid #95989b;
   border-color: #95989b;
   background-color: #fff; }
@@ -445,7 +531,8 @@
 
 #options-view-button:checked ~ #options .label {
   display: block;
-  padding: 12px 14px; }
+  padding: 12px 14px;
+  z-index: 2; }
 
 .s-c {
   position: absolute;
@@ -517,12 +604,12 @@ input[type="radio"] {
   transform: scale(0);
   font-size: 1rem;
   overflow: hidden;
-  text-align-last: center; }
+  text-align-last: center;
+  z-index: 2; }
 
 .option input[type="radio"]:checked ~ .opt-val {
   opacity: 1;
-  transform: scale(1);
-  padding: 1rem; }
+  transform: scale(1); }
 
 .option input[type="radio"]:checked ~ i {
   top: 0;
