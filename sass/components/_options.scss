@@ -1,7 +1,7 @@
 .brd
 {
-    border: 1px solid #e2eded;
-    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+    border: 1px solid rgba($color-divider,0.1);
+    border-color:rgba($color-divider,0.5);
 }
 #info
 {
@@ -13,7 +13,7 @@
     font-size: 16px;
     text-align: center;
     padding: 14px;
-    background-color: #f3f9f9;
+    background-color: $color-white;
 }
 
 #app-cover
@@ -35,6 +35,7 @@
     height: 100%;
     width: 100%;
     padding: 0px 14px;
+    outline: none;
     background-color: transparent;
     cursor: pointer
 }
@@ -54,9 +55,10 @@
 
 #selected-value
 {
+    text-align: center;
+    padding: .8rem 0;
     font-size: 16px;
     line-height: 1;
-    margin-right: 26px;
 }
 
 .option i
@@ -67,32 +69,32 @@
 
 .option, .label
 {
-    color: #2d3667;
+    color: $color-textdark;
     font-size: 16px;
 }
 
 #chevrons
 {
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
+    top: -7%;
     width: 27px;
-    padding: 26px 14px;
+    height: 2.8rem;
+    padding: 16px 14px;
 }
 
 #chevrons i
 {
     display: block;
     height: 50%;
-    color: #d1dede;
+    color: $color-divider;
     font-size: 12px;
     text-align: right;
 }
 
 #options-view-button:checked + #select-button #chevrons i
 {
-    color: #2d3667;
+    color: $color-textdark;
 }
 
 .options
@@ -105,24 +107,31 @@
 #options
 {
     position: absolute;
-    top: 6rem;
-    right: 35rem;
+    top: 3rem;
+    right: 37rem;
     left: 0;
-    width: 23%;
-    height: 18vh;
+    width: 20%;
+    height: 32vh;
     margin: 0 auto;
-    background-color: $color-white;
+    background-color: transparent;
     border-radius: 4px;
 }
 
 #options-view-button:checked ~ #options
 {
-    border: 1px solid #e2eded;
-    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+    position: absolute;
+    top: 3rem;
+    right: 37rem;
+    left: 0;
+
+    border: 1px solid $color-divider;
+    border-color:$color-divider;
+    background-color: $color-white;
 }
 
 .option
 {
+    
     position: relative;
     line-height: 1;
     transition: 0.3s ease all;
@@ -188,7 +197,7 @@ input[type="radio"]
 
 .s-c:hover ~ i
 {
-    color: #fff;
+    color: $color-white;
     opacity: 0;
 }
 
@@ -200,20 +209,20 @@ input[type="radio"]
 
 .s-c.bottom:hover + i
 {
-    bottom: -25px;
-    animation: moveup 0.3s ease 0.1s forwards;
+    bottom: 25px;
+    animation: moveup .3s ease 0.1s forwards;
 }
 
 .s-c.top:hover ~ i
 {
     top: -25px;
-    animation: movedown 0.3s ease 0.1s forwards;
+    animation: movedown .3s ease 0.1s forwards;
 }
 
 @keyframes moveup
 {
     0%{ bottom: -25px; opacity: 0;}
-    100%{ bottom: 0; opacity: 1;}
+    100%{ bottom: 15px; opacity: 1;}
 }
 
 @keyframes movedown
@@ -231,12 +240,13 @@ input[type="radio"]
 {
     position: absolute;
     left: 0rem;
-    bottom: 5.7rem ;
+    bottom: 2.7rem ;
     width: 60%;
     height: 6vh;
     opacity: 0;
+    padding: 1rem;
     border-radius: 30px 0 0 30px;
-    background-color: red;
+    background-color: $color-white;
     transform: scale(0);
     font-size: 1rem;
     overflow: hidden;
@@ -247,6 +257,7 @@ input[type="radio"]
 {
     opacity: 1;
     transform: scale(1);
+    padding: 1rem;
 }
 
 .option input[type="radio"]:checked ~ i
@@ -259,7 +270,7 @@ input[type="radio"]
 
 .option input[type="radio"]:checked ~ i, .option input[type="radio"]:checked ~ .label
 {
-    color:#fff;
+    color:$color-white;
 }
 
 .option input[type="radio"]:checked ~ .label:before
@@ -275,100 +286,77 @@ input[type="radio"]
 
 #options-view-button:not(:checked) ~ #options .option input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 3.15rem ;
+    bottom: .15rem ;
 }
 
 .option:nth-child(1) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #000;
+    background-color: $color-primary;
     border-radius: 4px 4px 0 0;
 }
 
 .option:nth-child(1) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 5.7rem ;
+    bottom: 2.7rem ;
 }
 
 .option:nth-child(2) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #ea4c89;
+    background-color: $color-primary;
+    
 }
 
 .option:nth-child(2) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 8.2rem;
+    bottom: 5.2rem;
 }
 
 .option:nth-child(3) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #0057ff;
+    background-color: $color-primary;
 }
 
 .option:nth-child(3) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 10.7rem;
+    bottom: 7.7rem;
 }
 
 .option:nth-child(4) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #32c766;
+    background-color: $color-primary;
 }
 
 .option:nth-child(4) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 13.2rem;
+    bottom: 10.2rem;
 }
 
 .option:nth-child(5) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #f48024;
+    background-color: $color-primary;
 }
 
 .option:nth-child(5) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 15.7rem;
+    bottom: 12.7rem;
 }
 
 .option:nth-child(6) input[type="radio"]:checked ~ .label:before
 {
-    background-color: #006400;
+    background-color: $color-primary;
     border-radius: 0 0 4px 4px;
 }
 
 .option:nth-child(6) input[type="radio"]:checked ~ .opt-val
 {
-    bottom: 18.2rem;
+    bottom: 15.2rem;
 }
 
-.option .fa-codepen
+.option-icon
 {
-    color: #000;
+    color: $color-primary;
 }
 
-.option .fa-dribbble
-{
-    color: #ea4c89;
-}
-
-.option .fa-behance
-{
-    color: #0057ff;
-}
-
-.option .fa-hackerrank
-{
-    color: #32c766;
-}
-
-.option .fa-stack-overflow
-{
-    color: #f48024;
-}
-
-.option .fa-free-code-camp
-{
-    color: #006400;
-}
 
 #option-bg
 {
@@ -389,43 +377,43 @@ input[type="radio"]
 
 .option:hover .label
 {
-    color: #fff;
+    color: $color-white;
 }
 
 .option:nth-child(1):hover ~ #option-bg
 {
     top: 0;
-    background-color: #000;
+    background-color: $color-primary;
     border-radius: 4px 4px 0 0;
 }
 
 .option:nth-child(2):hover ~ #option-bg
 {
     top: 40px;
-    background-color: #ea4c89;
+    background-color: $color-primary;
 }
 
 .option:nth-child(3):hover ~ #option-bg
 {
     top: 80px;
-    background-color: #0057ff;
+    background-color:$color-primary;
 }
 
 .option:nth-child(4):hover ~ #option-bg
 {
     top: 120px;
-    background-color: #32c766;
+    background-color: $color-primary;
 }
 
 .option:nth-child(5):hover ~ #option-bg
 {
     top: 160px;
-    background-color: #f48024;
+    background-color: $color-primary;
 }
 
 .option:nth-child(6):hover ~ #option-bg
 {
     top: 200px;
-    background-color: #006400;
+    background-color: $color-primary;
     border-radius: 0 0 4px 4px;
 }
