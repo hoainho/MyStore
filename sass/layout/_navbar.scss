@@ -358,18 +358,22 @@
                         justify-content: center;
                         list-style-type: none;
                         z-index: 1;
+                        
                     }
                     &___item{
                         margin: .5rem;
                         &-features {
                             opacity: 0;
-                            position: relative;
-                            left: 50px;
+                            position: absolute;
+                            left: 20rem;
+                            top: 3.4rem;
                             transition: .5s ease-in-out .3s;
                             list-style-type: none;
+                            /* padding: 1.5rem 0rem; */
+                            width: 11vw;
                             &--link{
                                 text-decoration: none;
-                                color: $color-white;
+                                color: $color-textdark;
                                 
                                 &:hover,
                                 &:active,
@@ -383,10 +387,7 @@
                             &--item{
                                 padding: 1rem 0rem;
                                 border-bottom: 1px solid $color-divider;
-                                &:hover{
-                                    background-color:rgba(transparent, .1) ;
-                                }
-
+                                background-color:$color-primary;
                                 &:hover &_producttype{
                                     opacity: 1;
                                     left: 6rem;
@@ -443,9 +444,12 @@
                             }
                         }
                     }
+                    &___itemFeatures{
+                        transition: all .2s ease-in-out .2s;
+                    }
                     &___itemFeatures:hover &___item-features{
                         opacity: 1;
-                        left: 0;
+                        left: 14rem;
                     }
                     &___link{
                         text-decoration: none;

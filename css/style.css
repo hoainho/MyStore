@@ -305,21 +305,23 @@
           margin: .5rem; }
           .navbar-content--menu_menuNavbar__sticky___item-features {
             opacity: 0;
-            position: relative;
-            left: 50px;
+            position: absolute;
+            left: 20rem;
+            top: 3.4rem;
             transition: .5s ease-in-out .3s;
-            list-style-type: none; }
+            list-style-type: none;
+            /* padding: 1.5rem 0rem; */
+            width: 11vw; }
             .navbar-content--menu_menuNavbar__sticky___item-features--link {
               text-decoration: none;
-              color: #fff; }
+              color: #242424; }
               .navbar-content--menu_menuNavbar__sticky___item-features--link:hover, .navbar-content--menu_menuNavbar__sticky___item-features--link:active, .navbar-content--menu_menuNavbar__sticky___item-features--link:link {
                 text-decoration: none;
                 color: #ff7e00; }
             .navbar-content--menu_menuNavbar__sticky___item-features--item {
               padding: 1rem 0rem;
-              border-bottom: 1px solid #95989b; }
-              .navbar-content--menu_menuNavbar__sticky___item-features--item:hover {
-                background-color: rgba(0, 0, 0, 0.1); }
+              border-bottom: 1px solid #95989b;
+              background-color: #ff7e00; }
               .navbar-content--menu_menuNavbar__sticky___item-features--item:hover .navbar-content--menu_menuNavbar__sticky___item-features--item_producttype {
                 opacity: 1;
                 left: 6rem; }
@@ -354,9 +356,11 @@
                   .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:hover, .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:active, .navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link:link {
                     text-decoration: none;
                     color: #ff7e00; }
+        .navbar-content--menu_menuNavbar__sticky___itemFeatures {
+          transition: all .2s ease-in-out .2s; }
         .navbar-content--menu_menuNavbar__sticky___itemFeatures:hover .navbar-content--menu_menuNavbar__sticky___item-features {
           opacity: 1;
-          left: 0; }
+          left: 14rem; }
         .navbar-content--menu_menuNavbar__sticky___link {
           text-decoration: none;
           color: #fff; }
