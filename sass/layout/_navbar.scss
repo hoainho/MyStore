@@ -268,45 +268,53 @@
             }
         }
         &--menu{
-            margin:0 10rem;
+            border-top: 1px solid $color-divider;
+            height: 7.5vh;
             &__container{
-                height: 8vh;
+                height: 100%;
+                margin:0 10rem;
             }
             &_menutoggle{
-                border: 1px solid $color-divider;
-                padding: 0 1rem;
+                height: 100%;
+                width: 100%;
+                padding: 0;
                 &__container{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     justify-items: center;
-                    padding: .5rem .2rem;
+                    height: 100%;
+                    width: 100%;
                     &-button{
-                        position: relative;
-                        font-size: 1.3rem;
-                        color: $color-white;
-                        background-color: $color-primary;
-                        padding: .5rem 1rem;
+                        position: absolute;
+                        top: 0rem;
+                        left: 1rem;
+                        height: 101%;
+                        font-size: 1.2rem;
+                        color: #fff;
+                        background-color: #ff7e00;
+                        padding: 1.1rem .5rem;
                         border-radius: .2rem;
-                        width: 100%;
+                        width: 85%;
                         cursor: pointer;
+                    
                         &--icon{
                             position: relative;
-                            left:2rem;
-                            font-size: .8rem;
+                            margin-left: 4rem !important;
                         }
                         
                     }
                     &-checkbox{
                         position: absolute;
                         font-size: .5rem;
-                        top: .5rem;
-                        width: 81%;
-                        height: 5.4vh;
+                        top: 0.1rem;
+                        left: 1rem;
+                        width: 85%;
+                        height: 8.5vh;
                         opacity: 0;
                         cursor: pointer;
                         &:checked ~ .navbar-content--menu_menutoggle__container___list{
-                            height: 48vh ;
+                            height: 47vh ;
                             opacity: 1 ;
 
                         }
@@ -318,13 +326,14 @@
                         justify-content: center;
                         justify-items: center;
                         list-style-type: none;
-                        position: relative;
-                        bottom: 1rem;
-                        width: 100%;
-                        height: 0vh; // hidden
-                        opacity: 0; // hidden
+                        position: absolute;
+                        top: 3.3rem;
+                        left: 1rem;
+                        width: 85%;
+                        height: 0vh;
+                        opacity: 0;
                         padding: .4rem;
-                        border: 2px solid $color-primary;
+                        border: 2px solid #ff7e00;
                         transition: all 0.8s ease-in-out 0.3s;
                     }
                     &___item{
@@ -345,7 +354,6 @@
                 }
             }
             &_menuNavbar{
-                border: 1px solid $color-divider;
                 height: 100%;
                 &__sticky
                 {
@@ -358,19 +366,40 @@
                         justify-content: center;
                         list-style-type: none;
                         z-index: 1;
+                        height: 100%;
+                        top: -0.1rem;
+                        margin-bottom: 0 !important;
                         
                     }
                     &___item{
-                        margin: .5rem;
+                        position: relative;
+                        top: 0.2rem;
+                        margin: .9rem;
                         &-features {
                             opacity: 0;
                             position: absolute;
-                            left: 20rem;
-                            top: 3.4rem;
+                            left: 5rem;
+                            top: 2.5rem;
                             transition: .5s ease-in-out .3s;
                             list-style-type: none;
-                            /* padding: 1.5rem 0rem; */
                             width: 11vw;
+                            background-color: $color-white;
+                            border-radius: 3%;
+                            border: 1px solid rgba($color-divider, .3);
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                bottom: 97%;
+                                right: 7.8rem;
+                                width: 6%;
+                                height: 7%;
+                                border-radius: 10% 10% 10% 10%;
+                                color: transparent;
+                                background-color: $color-white;
+                                transform: rotate(45deg);
+                                z-index: -1;
+
+                            }
                             &--link{
                                 text-decoration: none;
                                 color: $color-textdark;
@@ -385,27 +414,41 @@
                                 
                             }
                             &--item{
-                                padding: 1rem 0rem;
-                                border-bottom: 1px solid $color-divider;
-                                background-color:$color-primary;
+                                position: relative;
+                                padding: .6rem .5rem;
+                                width: 80%;
+                                left: 1rem;
+                                background-color: $color-white;
+                                &:nth-child(-n+2){
+                                    border-bottom: 1px solid rgba($color-divider, .2);
+                                }
                                 &:hover &_producttype{
                                     opacity: 1;
-                                    left: 6rem;
+                                    left: 9.5rem;
                                 }
                                 &_producttype{
                                     opacity: 0;
                                     position: absolute;
                                     transition: .5s ease-in-out .3s;
-                                    left: 12rem;
-                                    width: 100%;
+                                    left: 15rem;
                                     list-style-type: none;
-                                    height: 100%;
+                                    width: 12vw;
+                                    background-color: $color-white;
+                                    border-radius: 3%;
+                                    border: 1px solid rgba($color-divider, .3);
                                     &-item{
-
+                                        position: relative;
+                                        padding: .6rem .5rem;
+                                        width: 86%;
+                                        left: 1rem;
+                                        background-color: $color-white;
+                                        &:nth-child(-n+2){
+                                            border-bottom: 1px solid rgba($color-divider, .2);
+                                        }
                                     }
                                     &-link{
                                         text-decoration: none;
-                                        color: $color-white;
+                                        color: $color-textdark;
                                         &:hover,
                                         &:active,
                                         &:link{
@@ -416,22 +459,33 @@
                                 }
                                 &:hover &_sortproduct{
                                     opacity: 1;
-                                    left: 6rem;
+                                    left: 9.5rem;
+                                    z-index: 2;
                                 }
                                 &_sortproduct{
                                     opacity: 0;
                                     position: absolute;
                                     transition: .5s ease-in-out .3s;
-                                    left: 12rem;
-                                    width: 100%;
+                                    left: 15rem;
                                     list-style-type: none;
-                                    height: 100%;
+                                    width: 12vw;
+                                    background-color: $color-white;
+                                    border-radius: 3%;
+                                    border: 1px solid rgba($color-divider, .3);
+                                    z-index: -1;
                                     &-item{
-
+                                        position: relative;
+                                        padding: .6rem .5rem;
+                                        width: 85%;
+                                        left: 1rem;
+                                        background-color: $color-white;
+                                        &:nth-child(-n+3){
+                                            border-bottom: 1px solid rgba($color-divider, .2);
+                                        }
                                     }
                                     &-link{
                                         text-decoration: none;
-                                        color: $color-white;
+                                        color: $color-textdark;
                                         &:hover,
                                         &:active,
                                         &:link{
@@ -449,7 +503,7 @@
                     }
                     &___itemFeatures:hover &___item-features{
                         opacity: 1;
-                        left: 14rem;
+                        left: 0rem;
                     }
                     &___link{
                         text-decoration: none;
@@ -465,8 +519,26 @@
                 }
             }
             &_contact{
-                border: 1px solid $color-divider;
+                border-left: 1px solid #95989b;
                 height: 100%;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                    color: $color-primary;
+                }
+                &__container{
+                    padding: .9rem 1rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    &-icon{
+                        position: absolute;
+                        font-size: 2rem;
+                        top: 0.2rem;
+                        left: 3rem;
+                    
+                    }
+                    
+                }
             }
         }
     } 
