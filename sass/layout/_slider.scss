@@ -1,0 +1,34 @@
+.slider {
+    margin: 1rem;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    &-content{
+        margin: 0 10rem;
+        &--tv{
+            background-image: url(../img/bgslider2.png);
+            background-size: cover;
+            /* background-position-x: 0rem; */
+            /* background-position-y: 0rem; */
+            height: 165%;
+            width: 69%;
+            left: 16%;
+            background-repeat: no-repeat;
+            position: absolute;
+            overflow: hidden;
+            &_control{
+                bottom: 12rem !important;
+            }
+            &_screen{
+                position: relative;
+                width: 100%;
+                height: 70%;
+                overflow: hidden;
+            }
+            &_button{
+                height: 73% !important;
+            }
+
+        }
+    }
+}
