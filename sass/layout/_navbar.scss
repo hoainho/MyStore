@@ -336,6 +336,8 @@
                         padding: .4rem;
                         border: 2px solid #ff7e00;
                         transition: all 0.8s ease-in-out 0.3s;
+                        background-color: $color-white;
+                        border-radius: 0 0 3% 3%;
                     }
                     &___item{
                         padding: .8rem 0;
@@ -358,7 +360,7 @@
                 height: 100%;
                 &__sticky
                 {
-
+                    z-index: 5;
                     &___list{
                         position: relative;
                         display: flex;
@@ -382,12 +384,13 @@
                             position: absolute;
                             left: 5rem;
                             top: 2.5rem;
-                            transition: .5s ease-in-out .3s;
+                            transition: .33s ease-in-out .3s;
                             list-style-type: none;
                             width: 11vw;
                             background-color: $color-white;
                             border-radius: 3%;
                             border: 1px solid rgba($color-divider, .3);
+                            visibility: hidden;
                             &::before{
                                 content: '';
                                 position: absolute;
@@ -431,7 +434,7 @@
                                 &_producttype{
                                     opacity: 0;
                                     position: absolute;
-                                    transition: .5s ease-in-out .3s;
+                                    transition: .3s ease-in-out .3s;
                                     left: 15rem;
                                     list-style-type: none;
                                     width: 12vw;
@@ -467,7 +470,7 @@
                                 &_sortproduct{
                                     opacity: 0;
                                     position: absolute;
-                                    transition: .5s ease-in-out .3s;
+                                    transition: .3s ease-in-out .3s;
                                     left: 15rem;
                                     list-style-type: none;
                                     width: 12vw;
