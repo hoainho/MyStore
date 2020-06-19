@@ -237,7 +237,8 @@
       .navbar-content--menu_menutoggle {
         height: 100%;
         width: 100%;
-        padding: 0; }
+        padding: 0;
+        z-index: 3; }
         .navbar-content--menu_menutoggle__container {
           display: flex;
           flex-direction: column;
@@ -310,6 +311,7 @@
           z-index: 1;
           height: 100%;
           top: -0.1rem;
+          right: .5rem;
           margin-bottom: 0 !important; }
         .navbar-content--menu_menuNavbar__sticky___item {
           position: relative;
@@ -784,3 +786,31 @@ input[type="radio"] {
   top: 200px;
   background-color: #ff7e00;
   border-radius: 0 0 4px 4px; }
+
+.slider {
+  margin: 1rem;
+  width: 100%;
+  height: 50vh;
+  position: relative; }
+  .slider-content {
+    margin: 0 10rem; }
+    .slider-content--tv {
+      background-image: url(../img/bgslider2.png);
+      background-size: cover;
+      /* background-position-x: 0rem; */
+      /* background-position-y: 0rem; */
+      height: 165%;
+      width: 69%;
+      left: 16%;
+      background-repeat: no-repeat;
+      position: absolute;
+      overflow: hidden; }
+      .slider-content--tv_control {
+        bottom: 12rem !important; }
+      .slider-content--tv_screen {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        overflow: hidden; }
+      .slider-content--tv_button {
+        height: 73% !important; }
