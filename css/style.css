@@ -412,7 +412,8 @@
           transition: all .2s ease-in-out .2s; }
         .navbar-content--menu_menuNavbar__sticky___itemFeatures:hover .navbar-content--menu_menuNavbar__sticky___item-features {
           opacity: 1;
-          left: 0rem; }
+          left: 0rem;
+          visibility: visible; }
         .navbar-content--menu_menuNavbar__sticky___link {
           text-decoration: none;
           color: #fff; }
