@@ -1,0 +1,27 @@
+button.slick-prev.slick-arrow {
+    &::before{
+        content: '⫷' !important;
+        color: $color-divider !important;
+        line-height: .5 !important;
+    }
+    
+    background-color: transparent;
+    width: 4%;
+    height: 19%;
+    border: 1px solid $color-divider;
+    border-radius: 50%;
+    z-index: 10;
+}
+button.slick-next.slick-arrow {
+    &::before{
+        content: '⫸' !important;
+        color: $color-divider !important;
+        line-height: .5 !important;
+    }
+    background-color: transparent;
+    width: 4%;
+    height: 19%;
+    border: 1px solid $color-divider ;
+    border-radius: 50%;
+    z-index: 10;
+}
