@@ -1,3 +1,6 @@
+.slick-prev, .slick-next {
+    top: 38% !important;
+}
 button.slick-prev.slick-arrow {
     &::before{
         content: '⫷' !important;
@@ -7,7 +10,7 @@ button.slick-prev.slick-arrow {
     
     background-color: transparent;
     width: 4%;
-    height: 19%;
+    height: 11%;
     border: 1px solid $color-divider;
     border-radius: 50%;
     z-index: 10;
@@ -20,7 +23,7 @@ button.slick-next.slick-arrow {
     }
     background-color: transparent;
     width: 4%;
-    height: 19%;
+    height: 11%;
     border: 1px solid $color-divider ;
     border-radius: 50%;
     z-index: 10;

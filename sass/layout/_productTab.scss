@@ -57,10 +57,9 @@
                     }
                     &:hover &-details 
                     {
-                        width: 3vw;
-                        height: 6vh;
                         color: $color-white;
                         opacity: 1;
+                        animation: zoomIn .5s ease-in-out .3s;
                         
                     }
                     &:hover &-button
@@ -88,6 +87,7 @@
                     &-price{
                         font-size: 1.2rem;
                         font-weight: bold;
+                        text-align: center;
                         &--present{
                             color: $color-primary;
                         }
@@ -100,7 +100,7 @@
                                 position: absolute;
                                 border-top: 2px solid $color-divider;
                                 width: 6vw;
-                                top: 94%;
+                                top: 67%;
                                 height: 1vh;
                             }
                         }
@@ -115,15 +115,15 @@
                     }
                     &-details{
                         opacity: 0;
-                        width: 0vw;
-                        height: 0vh;
+                        width: 3vw;
+                        height: 6vh;
                         border-radius: 50%;
                         background-color: $color-primary;
                         color: transparent;
                         position: relative;
                         top: -4rem;
                         left: 6rem;
-                        transition:all .6s ease-in-out .3s;
+                        transition: all .5s ease-in-out .3s;
                         cursor: pointer;
                         &:hover{
                             transform: scale(1.05);
@@ -144,8 +144,8 @@
                         position: relative;
                         width: 100%;
                         height: 48%;
-                        background-color:$color-white;
-                        bottom: -7rem;
+                        background-color: $color-white;
+                        bottom: 3rem;
                         display: flex;
                         flex-direction: column;
                         padding: 1rem;
