@@ -30,7 +30,7 @@
                         position: relative;
                         background: transparent;
                         border-radius: 3%;
-                        bottom: 7rem;
+                        bottom: -19rem;
                         padding: .5rem .3rem;
                         left: 8rem;
                         border: 1px solid $color-white;
@@ -59,11 +59,20 @@
                         font-size: .8rem;
                         font-weight: 200;
                         position: absolute;
-                        bottom: 12rem;
+                        bottom: -11rem;
                         left: 8rem;
                         width: 15%;
                         height: 10%;
 
+                    }
+                    &___pic{
+                        &-shadow{
+                            position: absolute;
+                            width: 36%;
+                            right: 4rem;
+                            top: 22rem;
+                            filter: blur(15px);
+                        }
                     }
                 }
             }
