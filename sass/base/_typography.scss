@@ -13,3 +13,14 @@
 .is-zindex{
     z-index: 9;
 }
+.special{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: $color-primary;
+}
+.w-100{
+    width: 40%!important;
+    position: absolute;
+    right: 6rem;
+    top: 3rem;
+}

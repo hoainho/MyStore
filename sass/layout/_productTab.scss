@@ -46,7 +46,7 @@
             
 
         }
-        &_content{
+        &_content{  
             margin: 1rem 0;
             &__box{
                 padding: .5rem;
@@ -68,10 +68,12 @@
                         color: $color-white;
                         opacity: 1;
                         animation: zoomIn .5s ease-in-out .3s;
+                        visibility: visible;
                         
                     }
                     &:hover &-button
                     {
+                        visibility: visible;
                         bottom: 7rem;
                         opacity: 1;
                     }
@@ -108,7 +110,7 @@
                                 position: absolute;
                                 border-top: 2px solid $color-divider;
                                 width: 6vw;
-                                top: 67%;
+                                top: 66%;
                                 height: 1vh;
                             }
                         }
@@ -133,6 +135,7 @@
                         left: 6rem;
                         transition: all .5s ease-in-out .3s;
                         cursor: pointer;
+                        visibility: hidden;
                         &:hover{
                             transform: scale(1.05);
                         }
@@ -159,6 +162,7 @@
                         flex-direction: column;
                         padding: 1rem;
                         transition: all .6s ease-in-out .3s;
+                        visibility: hidden;
                         &--card{
                             position: relative;
                             left: 15%;

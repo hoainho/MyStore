@@ -20,6 +20,17 @@
 .is-zindex {
   z-index: 9; }
 
+.special {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ff7e00; }
+
+.w-100 {
+  width: 40% !important;
+  position: absolute;
+  right: 6rem;
+  top: 3rem; }
+
 .navbar {
   font-size: 1rem;
   padding: 0 !important; }
@@ -832,7 +843,7 @@ input[type="radio"] {
           position: relative;
           background: transparent;
           border-radius: 3%;
-          bottom: 7rem;
+          bottom: -19rem;
           padding: .5rem .3rem;
           left: 8rem;
           border: 1px solid #fff;
@@ -857,10 +868,16 @@ input[type="radio"] {
           font-size: .8rem;
           font-weight: 200;
           position: absolute;
-          bottom: 12rem;
+          bottom: -11rem;
           left: 8rem;
           width: 15%;
           height: 10%; }
+        .slider-content--tv_screen__box___pic-shadow {
+          position: absolute;
+          width: 36%;
+          right: 4rem;
+          top: 22rem;
+          filter: blur(15px); }
       .slider-content--tv_button {
         height: 73% !important;
         width: 10%; }
@@ -960,8 +977,10 @@ input[type="radio"] {
           .product-tab--container_content__box___product:hover .product-tab--container_content__box___product-details {
             color: #fff;
             opacity: 1;
-            animation: zoomIn .5s ease-in-out .3s; }
+            animation: zoomIn .5s ease-in-out .3s;
+            visibility: visible; }
           .product-tab--container_content__box___product:hover .product-tab--container_content__box___product-button {
+            visibility: visible;
             bottom: 7rem;
             opacity: 1; }
           .product-tab--container_content__box___product-pic {
@@ -991,7 +1010,7 @@ input[type="radio"] {
                 position: absolute;
                 border-top: 2px solid #95989b;
                 width: 6vw;
-                top: 67%;
+                top: 66%;
                 height: 1vh; }
           .product-tab--container_content__box___product-sale {
             position: absolute;
@@ -1011,7 +1030,8 @@ input[type="radio"] {
             top: -4rem;
             left: 6rem;
             transition: all .5s ease-in-out .3s;
-            cursor: pointer; }
+            cursor: pointer;
+            visibility: hidden; }
             .product-tab--container_content__box___product-details:hover {
               transform: scale(1.05); }
             .product-tab--container_content__box___product-details:active {
@@ -1031,7 +1051,8 @@ input[type="radio"] {
             display: flex;
             flex-direction: column;
             padding: 1rem;
-            transition: all .6s ease-in-out .3s; }
+            transition: all .6s ease-in-out .3s;
+            visibility: hidden; }
             .product-tab--container_content__box___product-button--card {
               position: relative;
               left: 15%;
@@ -1108,3 +1129,107 @@ button.slick-next.slick-arrow {
     content: '⫸' !important;
     color: #95989b !important;
     line-height: .5 !important; }
+
+.product-special {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .product-special--container {
+    margin: 0 10rem; }
+    .product-special--container_box {
+      pad: 0 .5rem; }
+    .product-special--container_bestprice {
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 5px;
+      overflow: hidden;
+      background-image: linear-gradient(45deg, rgba(149, 152, 155, 0.5), transparent);
+      cursor: pointer; }
+      .product-special--container_bestprice::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        height: 1px;
+        top: 10px;
+        left: 50%;
+        right: 50%;
+        background-color: #fff; }
+      .product-special--container_bestprice::after {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        height: 1px;
+        bottom: 10px;
+        left: 50%;
+        right: 50%;
+        background-color: #fff; }
+      .product-special--container_bestprice-hover {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        width: 1px;
+        right: 2rem;
+        top: 50%;
+        bottom: 50%;
+        background-color: #fff; }
+        .product-special--container_bestprice-hover::before {
+          content: "";
+          position: absolute;
+          display: block;
+          z-index: 1;
+          -webkit-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+          width: 1px;
+          right: 33.5rem;
+          top: 50%;
+          bottom: 50%;
+          background-color: #fff; }
+      .product-special--container_bestprice:hover::before {
+        left: 5% !important;
+        right: 5% !important; }
+      .product-special--container_bestprice:hover::after {
+        left: 5% !important;
+        right: 5% !important; }
+      .product-special--container_bestprice:hover ~ .product-special--container_bestprice-hover {
+        top: 5% !important;
+        bottom: 5% !important; }
+      .product-special--container_bestprice:hover ~ .product-special--container_bestprice-hover::before {
+        top: 1% !important;
+        bottom: 1% !important; }
+      .product-special--container_bestprice__pic {
+        position: relative;
+        width: 31%;
+        height: 100%;
+        left: -1rem; }
+      .product-special--container_bestprice__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        right: 5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif; }
+        .product-special--container_bestprice__content-left {
+          right: 1rem; }
+        .product-special--container_bestprice__content___tittle {
+          color: rgba(36, 36, 36, 0.7); }
+        .product-special--container_bestprice__content___sub {
+          color: #95989b;
+          position: relative;
+          bottom: .5rem; }
+        .product-special--container_bestprice__content___sale {
+          margin-top: 2rem;
+          color: #95989b;
+          font-size: .85rem; }
