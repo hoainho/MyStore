@@ -1408,6 +1408,12 @@ button.slick-next.slick-arrow {
         left: 50%;
         right: 50%;
         background-color: #fff; }
+      .product-special--container_bestprice--rightbanner:hover::before {
+        left: 8% !important;
+        right: 8% !important; }
+      .product-special--container_bestprice--rightbanner:hover::after {
+        left: 8% !important;
+        right: 8% !important; }
       .product-special--container_bestprice-hover {
         content: "";
         position: absolute;
@@ -1436,12 +1442,14 @@ button.slick-next.slick-arrow {
           background-color: #fff; }
         .product-special--container_bestprice-hover-banner::before {
           right: 45.5rem !important; }
+        .product-special--container_bestprice-hover--rightbanner::before {
+          right: 21rem !important; }
       .product-special--container_bestprice:hover::before {
-        left: 5% !important;
-        right: 5% !important; }
+        left: 5%;
+        right: 5%; }
       .product-special--container_bestprice:hover::after {
-        left: 5% !important;
-        right: 5% !important; }
+        left: 5%;
+        right: 5%; }
       .product-special--container_bestprice:hover ~ .product-special--container_bestprice-hover {
         top: 5% !important;
         bottom: 5% !important; }
@@ -1454,8 +1462,11 @@ button.slick-next.slick-arrow {
         height: 100%;
         left: -1rem; }
         .product-special--container_bestprice__pic-banner {
-          width: 22% !important;
-          left: 0rem !important; }
+          width: 27% !important;
+          left: -2rem; }
+        .product-special--container_bestprice__pic--rightbanner {
+          top: 4rem;
+          left: -4rem; }
       .product-special--container_bestprice__content {
         display: flex;
         flex-direction: column;
@@ -1463,12 +1474,21 @@ button.slick-next.slick-arrow {
         position: relative;
         right: 5rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif; }
+        .product-special--container_bestprice__content-banner {
+          right: -1rem !important;
+          padding: 1rem 0; }
         .product-special--container_bestprice__content-left {
           right: 1rem; }
           .product-special--container_bestprice__content-left-banner {
-            right: 11rem; }
+            right: 11rem;
+            padding: 1.35rem; }
         .product-special--container_bestprice__content___tittle {
           color: rgba(36, 36, 36, 0.7); }
+          .product-special--container_bestprice__content___tittle-banner {
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.4rem !important;
+            width: 100%;
+            font-weight: bold; }
         .product-special--container_bestprice__content___sub {
           color: #95989b;
           position: relative;
@@ -1477,3 +1497,5 @@ button.slick-next.slick-arrow {
           margin-top: 2rem;
           color: #95989b;
           font-size: .85rem; }
+          .product-special--container_bestprice__content___sale-banner {
+            margin-top: 3.2rem; }

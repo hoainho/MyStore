@@ -43,6 +43,18 @@
                 right: 50%;
                 background-color: $color-white;
             }
+            &--rightbanner{
+                &:hover{ 
+                    &::before  {
+                   left: 8% !important;
+                   right: 8% !important;
+                    }
+                    &::after  {
+                        left: 8% !important;
+                        right: 8% !important;
+                    }
+                }
+            }
             &-hover{
                 content: "";
                 position: absolute;
@@ -75,15 +87,20 @@
                         right: 45.5rem !important;
                     }
                 }
+                &--rightbanner{
+                    &::before{
+                        right: 21rem !important;
+                    }
+                }
             }
             &:hover{ 
                 &::before  {
-               left: 5% !important;
-               right: 5% !important;
+               left: 5% ;
+               right: 5% ;
                 }
                 &::after  {
-                    left: 5% !important;
-                    right: 5% !important;
+                    left: 5% ;
+                    right: 5% ;
                 }
             }
             &:hover ~ &-hover{
@@ -93,15 +110,20 @@
             &:hover ~ &-hover::before{
                 top: 1% !important;
                 bottom: 1% !important;
-        }
+            }
+           
             &__pic{
                 position: relative;
                 width: 31%;
                 height: 100%;
                 left: -1rem;
                 &-banner{
-                    width: 22% !important;
-                    left: 0rem !important;
+                    width: 27% !important;
+                    left: -2rem;
+                }
+                &--rightbanner{
+                    top: 4rem;
+                    left: -4rem;
                 }
             }
             &__content{
@@ -111,14 +133,25 @@
                 position: relative;
                 right: 5rem;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+                &-banner{
+                    right: -1rem !important;
+                    padding: 1rem 0 ;
+                }
                 &-left{
                     right: 1rem;
                     &-banner{
                         right: 11rem;
+                        padding: 1.35rem;
                     }
                 }
                 &___tittle{
                     color: rgba($color-textdark,.7);
+                    &-banner{
+                        font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+                        font-size: 1.4rem !important;
+                        width: 100%;
+                        font-weight: bold;
+                    }
                     
                 }
                 &___sub{
@@ -130,6 +163,9 @@
                     margin-top: 2rem;
                     color: $color-divider;
                     font-size: .85rem;
+                    &-banner{
+                        margin-top: 3.2rem;
+                    }
                 }
             }
         }
