@@ -70,6 +70,11 @@
                     bottom: 50%;
                     background-color: #fff;
                 }
+                &-banner{
+                    &::before{
+                        right: 45.5rem !important;
+                    }
+                }
             }
             &:hover{ 
                 &::before  {
@@ -94,6 +99,10 @@
                 width: 31%;
                 height: 100%;
                 left: -1rem;
+                &-banner{
+                    width: 22% !important;
+                    left: 0rem !important;
+                }
             }
             &__content{
                 display: flex;
@@ -104,6 +113,9 @@
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
                 &-left{
                     right: 1rem;
+                    &-banner{
+                        right: 11rem;
+                    }
                 }
                 &___tittle{
                     color: rgba($color-textdark,.7);

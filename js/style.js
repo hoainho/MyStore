@@ -11,6 +11,14 @@ $('.product-tab--container_content__box').slick({
     swipe:true,
 
 });
+$('.product-tab--container_content__category').slick({
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  touchMove: true,
+  swipe:true,
+
+});
 
 
 $(document).ready(function(){
