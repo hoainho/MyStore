@@ -1,6 +1,7 @@
 
 //AOS
 AOS.init({
+  
   });
   
 $('.product-tab--container_content__box').slick({
