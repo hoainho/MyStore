@@ -37,12 +37,20 @@
                         color: $color-white;
                         font-weight: 400;
                         font-family: 'Courier New', Courier, monospace;
-                        transition: .1s ease-in-out .1s;
+                        transition: .2s ease-in-out .1s;
                         cursor: pointer;
+                        outline: none;
                         &:hover {
                             background-color: $color-primary;
-                            border-radius: 6%;
-                            
+                            border-radius: 30px;
+                            transform: scale(1.05);
+                            outline: none;
+                        }
+                        &:active,
+                        &:visited{
+                            transform: scale(.95);
+                            outline: none;
+                            border: none;
                         }
                     }
                     &___introduce{

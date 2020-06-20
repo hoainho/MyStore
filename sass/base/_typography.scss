@@ -1,5 +1,14 @@
-.is-active{
-    opacity: 1 !important;
+.active-tab{
+    display: block !important;
+}
+.active-tab--link{
+    text-decoration: none !important;
+    color: $color-textdark ;
+    font-weight: bolder !important;
+    font-size: 1.5rem !important; 
+}
+.active-tab--item{
+    border-bottom: 2px solid $color-primary !important;
 }
 .is-zindex{
     z-index: 9;

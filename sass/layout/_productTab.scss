@@ -13,36 +13,44 @@
                 justify-content: center;
             }
             &__item{
-                margin: .5rem 1rem;
+                margin: .5rem 2rem;
                 padding: .5rem;
-                &:active{
+                cursor: pointer;
+                &:active,
+                &:visited{
                     border-bottom: 2px solid $color-primary;
                 }
             }
             &__link{
                 text-decoration: none;
-                color: $color-divider;
                 font-size: 1rem;
                 font-weight: bold;
-                
+                color: $color-divider;
+                &:link,
+                :visited{
+                    color: $color-divider !important;
+                }
                 &:active
                 {
                     text-decoration: none;
                     color: $color-textdark;
                     font-weight: bolder;
-                    font-size: 1.2rem; 
+                    font-size: 1.5rem; 
                 }
                 &:hover{
                     text-decoration: none;
-                    color: rgba($color-textdark, .8);
+                    color: $color-primary !important;
                 }
 
             }
+            
+
         }
         &_content{
             margin: 1rem 0;
             &__box{
                 padding: .5rem;
+                display: none;
                 &___product{
                     display: flex !important;
                     flex-direction: column;
@@ -129,7 +137,8 @@
                             transform: scale(1.05);
                         }
                         
-                        &:active{
+                        &:active
+                        {
                             transform: scale(.95);
                         }
                         &--icon{
@@ -157,10 +166,10 @@
                             font-size: .8rem;
                             text-transform: uppercase;
                             font-weight: 500;
-                            color: #fff;
+                            color: $color-white;
                             padding: .5rem .3rem;
                             border-radius: 30px;
-                            background-color: #ff7e00;
+                            background-color: $color-primary;
                             cursor: pointer;
                             outline: none;
                             border: none;
@@ -168,9 +177,11 @@
                             &:hover{
                                 transform: scale(1.05);
                             }
-                            &:active,&:visited{
+                            &:active,
+                            &:visited{
                                 transform: scale(.95);
                                 outline: none;
+                                border: none;
                             }
                         }
                         &--control{
