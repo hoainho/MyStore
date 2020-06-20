@@ -933,7 +933,7 @@ input[type="radio"] {
       color: #95989b; }
       .product-tab--container_tittle__link:link,
       .product-tab--container_tittle__link :visited {
-        color: #95989b !important; }
+        color: #95989b; }
       .product-tab--container_tittle__link:active {
         text-decoration: none;
         color: #242424;
