@@ -4,7 +4,11 @@ AOS.init({
   
   });
   
-$('.product-tab--container_content__box').slick({
+
+
+$(document).ready(function(){
+  
+  $('.product-tab--container_content__box').slick({
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 3,
@@ -20,7 +24,9 @@ $('.product-tab--container_content__category').slick({
   swipe:true,
 
 });
-
+  
+  });
+  
 
 $(document).ready(function(){
 $('.product-tab--container_tittle__item').click(
