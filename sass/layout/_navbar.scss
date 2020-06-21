@@ -341,7 +341,9 @@
                     }
                     &___item{
                         padding: .8rem 0;
-                        border-bottom: 1px solid rgba($color-divider, .5);
+                        &:nth-child(-n+6){
+                            border-bottom: 1px solid rgba($color-divider, .3);
+                        }
                     }
                     &___link{
                         text-decoration: none;
