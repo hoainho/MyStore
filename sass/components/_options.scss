@@ -31,7 +31,8 @@
 {
     position: relative;
     bottom: 3.2rem;
-    border-radius: 30px 0 0 30px;
+    border: none;
+    border-right: 1px solid rgba($color-divider, .3);
     height: 100%;
     width: 100%;
     padding: 0px 14px;
