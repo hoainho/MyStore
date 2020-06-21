@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:900);
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,13 @@
 
 .active-W {
   width: 100% !important; }
+
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;
+  height: 0; }
+
+.tab-content > .active, .pill-content > .active {
+  height: auto; }
 
 .navbar {
   font-size: 1rem;
@@ -316,8 +324,9 @@
             background-color: #fff;
             border-radius: 0 0 3% 3%; }
           .navbar-content--menu_menutoggle__container___item {
-            padding: .8rem 0;
-            border-bottom: 1px solid rgba(149, 152, 155, 0.5); }
+            padding: .8rem 0; }
+            .navbar-content--menu_menutoggle__container___item:nth-child(-n+6) {
+              border-bottom: 1px solid rgba(149, 152, 155, 0.3); }
           .navbar-content--menu_menutoggle__container___link {
             text-decoration: none;
             color: #242424;
@@ -820,7 +829,6 @@ input[type="radio"] {
 
 .slider {
   margin: 1rem;
-  width: 100%;
   height: 83vh;
   position: relative; }
   .slider-content {
@@ -901,8 +909,9 @@ input[type="radio"] {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      border-right: 1px solid rgba(149, 152, 155, 0.3);
       height: 100%; }
+      .ability-container--content:nth-child(-n+3) {
+        border-right: 1px solid rgba(149, 152, 155, 0.3); }
       .ability-container--content_icon {
         font-size: 3rem;
         position: absolute;
@@ -1232,7 +1241,7 @@ input[type="radio"] {
             width: 100%;
             text-align: center; }
           .product-tab--container_content__category___product-price {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             text-align: center; }
             .product-tab--container_content__category___product-price--present {
@@ -1511,3 +1520,78 @@ button.slick-next.slick-arrow {
           font-size: .85rem; }
           .product-special--container_bestprice__content___sale-banner {
             margin-top: 3.2rem; }
+
+.product-TOP {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .product-TOP--category {
+    margin: 0 7rem;
+    height: 100%;
+    position: relative; }
+    .product-TOP--category_tittle {
+      border-bottom: 2px solid #ff7e00;
+      width: 38%;
+      margin: -.1rem;
+      position: relative;
+      right: 1rem; }
+      .product-TOP--category_tittle__details {
+        color: #242424;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 2rem; }
+    .product-TOP--category_content {
+      border-top: 2px solid rgba(149, 152, 155, 0.3);
+      padding: 2rem 0; }
+      .product-TOP--category_content__container {
+        padding: .5rem;
+        background-image: url("../../img/HeadphoneAcer1A.png");
+        background-size: 14rem;
+        background-position-x: 2rem;
+        background-position-y: -2rem;
+        overflow: hidden;
+        background-repeat: no-repeat; }
+        .product-TOP--category_content__container:nth-child(-n +5) {
+          border-right: 1px solid rgba(149, 152, 155, 0.3); }
+        .product-TOP--category_content__container-KB {
+          background-image: url("../../img/keyboard2A.png");
+          background-size: 12rem;
+          background-position-x: 3rem;
+          background-position-y: 1rem; }
+        .product-TOP--category_content__container-SC {
+          background-image: url("../../img/SCAcer1A.png");
+          background-size: 10rem;
+          background-position-x: 3rem;
+          background-position-y: 3rem; }
+        .product-TOP--category_content__container-MOUSE {
+          background-image: url("../../img/mouse2A.png");
+          background-size: 12rem;
+          background-position-x: 2rem;
+          background-position-y: 2.5rem; }
+        .product-TOP--category_content__container-SW {
+          background-image: url("../../img/SW2.png");
+          background-size: 10rem;
+          background-position-x: 3rem;
+          background-position-y: 4rem; }
+        .product-TOP--category_content__container-MORE {
+          background-image: url("../../img/more2.png");
+          background-size: 12rem;
+          background-position-x: 3rem;
+          background-position-y: 1rem; }
+        .product-TOP--category_content__container___tittle {
+          font-size: 1.5rem;
+          font-weight: bold;
+          font-family: inherit;
+          color: #242424; }
+        .product-TOP--category_content__container___list {
+          list-style-type: none;
+          margin: .3rem 0; }
+        .product-TOP--category_content__container___link {
+          color: #95989b;
+          font-size: 1rem;
+          font-family: inherit;
+          font-weight: lighter;
+          text-decoration: none; }
+          .product-TOP--category_content__container___link:link, .product-TOP--category_content__container___link:active, .product-TOP--category_content__container___link:hover {
+            text-decoration: none;
+            color: #ff7e00; }
