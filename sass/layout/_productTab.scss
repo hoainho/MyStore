@@ -13,6 +13,13 @@
     }
     &--container{
         margin: 0 5rem;
+        &_hero{
+            background-image: url(../../img/freeship.png);
+            background-repeat: no-repeat;
+            background-size: 6rem;
+            background-position-x:right;
+        
+        }
         &_tittle{
             &__list{
                 position: relative;
@@ -248,7 +255,7 @@
             position: absolute;
             background-color: $color-light;
             background-image: url('/img/HeadphoneAsus1B.png');
-            background-size: contain;
+            background-size: contain ;
             background-repeat: no-repeat;
             background-position-x: 1rem;
             &-KB{
