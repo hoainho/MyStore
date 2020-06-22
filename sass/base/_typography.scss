@@ -7,6 +7,18 @@
     font-weight: bolder !important;
     font-size: 1.5rem !important; 
 }
+.high-light{
+    color: $color-primary;
+    font-weight: bold;
+    text-decoration: none;
+    &:active,
+    &:link,
+    &:visited,
+    &:hover{
+        color:$color-primary;
+        text-decoration: none;
+    }
+}
 .active-tab--item{
     border-bottom: 2px solid $color-primary !important;
 }
