@@ -79,8 +79,27 @@ $('.product-tab--container_content__category-KB').slick({
   useTransform:true,
 
 });
+$('.trademark-container--slider').slick({
+  dots: false,
+  accessibility:true,
+  slidesToShow: 15,
+  slidesToScroll: 3,
+  autoplay:true,
+  autoplaySpeed: 1000,
+  centerMode:true,  
+  initialSlide: 5,
+  lazyLoad:'ondemand',
+  pauseOnHover:true,
+  swipe:true,
+  touchMove:true,
+  useCSS:true,
+  useCSS3:true, 
+  useTransform:true,
+  prevArrow:false,
+  nextArrow:false,
 
-  
+});
+
   });
 
 $(document).ready(function(){

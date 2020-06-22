@@ -927,8 +927,10 @@ input[type="radio"] {
         font-size: 1rem;
         position: relative;
         top: .2rem;
-        left: 2rem;
+        left: 1rem;
         font-weight: 100 !important; }
+        .ability-container--content_name-freeship {
+          left: 3rem; }
         .ability-container--content_name__tittle {
           font-size: 1.2rem !important;
           margin: 0;
@@ -1542,6 +1544,7 @@ button.slick-next.slick-arrow {
         font-size: 2rem; }
     .product-TOP--category_content {
       border-top: 2px solid rgba(149, 152, 155, 0.3);
+      border-bottom: 1px solid rgba(149, 152, 155, 0.2);
       padding: 2rem 0; }
       .product-TOP--category_content__container {
         padding: .5rem;
@@ -1595,3 +1598,43 @@ button.slick-next.slick-arrow {
           .product-TOP--category_content__container___link:link, .product-TOP--category_content__container___link:active, .product-TOP--category_content__container___link:hover {
             text-decoration: none;
             color: #ff7e00; }
+
+.trademark {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .trademark-container {
+    margin: 0 3rem;
+    padding: 1rem 0; }
+    .trademark-container--slider {
+      width: 100%;
+      height: 100%; }
+      .trademark-container--slider_box {
+        margin: .5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row; }
+        .trademark-container--slider_box__icon {
+          width: 100%; }
+          .trademark-container--slider_box__icon:hover .trademark-container--slider_box__icon-A {
+            display: none !important;
+            opacity: 0; }
+          .trademark-container--slider_box__icon:hover .trademark-container--slider_box__icon-B {
+            display: block !important;
+            opacity: 1; }
+          .trademark-container--slider_box__icon-All {
+            position: relative;
+            width: 100%;
+            height: 10vh;
+            transition: all ease-in-out 1s !important; }
+          .trademark-container--slider_box__icon-A {
+            opacity: 1;
+            display: block; }
+          .trademark-container--slider_box__icon-B {
+            opacity: 0;
+            display: none !important; }
+        .trademark-container--slider_box__name {
+          width: 50%;
+          color: #95989b;
+          font-weight: bold;
+          font-size: 2rem; }
