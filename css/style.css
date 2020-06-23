@@ -282,7 +282,11 @@
     .navbar-content--menu {
       border-top: 1px solid #95989b;
       height: 7.5vh;
-      position: relative; }
+      position: relative;
+      transition: .5s ease-in-out .3s;
+      background: linear-gradient(-45deg, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #95989b, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e, #232f3e);
+      animation: gradient 10s ease infinite;
+      background-size: 400% 400%; }
       .navbar-content--menu__container {
         height: 100%;
         margin: 0 10rem; }
