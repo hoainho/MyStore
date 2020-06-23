@@ -13,6 +13,9 @@
     }
     &--container{
         margin: 0 5rem;
+        background-image: url(../../img/Bgtabs.png);
+        background-size: cover;
+        background-repeat: no-repeat;
         &_hero{
             background-image: url(../../img/freeship.png);
             background-repeat: no-repeat;

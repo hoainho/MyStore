@@ -3,7 +3,23 @@
 AOS.init({
   
   });
-  
+//LoadPage follow to CrollY
+window.onload = function(){
+  const ShowEdu =document.querySelector(".navbar-content--menu");
+  window.addEventListener('scroll',menuFixed);
+
+  function menuFixed(){
+        if(window.scrollY >=1000) {
+            ShowEdu.style.position= 'relative';
+            ShowEdu.style.transition = '0.25 ease-in-out';
+          }
+          else
+          {
+            ShowEdu.style.position = 'fixed';
+          }
+    };
+ 
+}  
 
 
 $(document).ready(function(){

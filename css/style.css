@@ -281,7 +281,8 @@
                     cursor: pointer; }
     .navbar-content--menu {
       border-top: 1px solid #95989b;
-      height: 7.5vh; }
+      height: 7.5vh;
+      position: relative; }
       .navbar-content--menu__container {
         height: 100%;
         margin: 0 10rem; }
@@ -971,7 +972,10 @@ input[type="radio"] {
   .product-tab--categorySC {
     margin-top: 0rem; }
   .product-tab--container {
-    margin: 0 5rem; }
+    margin: 0 5rem;
+    background-image: url(../../img/Bgtabs.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
     .product-tab--container_hero {
       background-image: url(../../img/freeship.png);
       background-repeat: no-repeat;

@@ -272,6 +272,7 @@
         &--menu{
             border-top: 1px solid $color-divider;
             height: 7.5vh;
+            position: relative;
             &__container{
                 height: 100%;
                 margin:0 10rem;
