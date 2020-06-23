@@ -273,6 +273,12 @@
             border-top: 1px solid $color-divider;
             height: 7.5vh;
             position: relative;
+            transition: .5s ease-in-out .3s;
+            background: linear-gradient(-45deg, $color-background, $color-background,$color-background,$color-background,$color-background,$color-background,$color-background,                                
+                                                 $color-divider,
+                                                $color-background,$color-background,$color-background,$color-background,$color-background,$color-background,$color-background,$color-background);
+            animation: gradient 10s ease infinite;
+            background-size: 400% 400%  ;
             &__container{
                 height: 100%;
                 margin:0 10rem;

@@ -5,17 +5,22 @@ AOS.init({
   });
 //LoadPage follow to CrollY
 window.onload = function(){
-  const ShowEdu =document.querySelector(".navbar-content--menu");
+  const ShowNavbar =document.querySelector(".navbar-content--menu");
   window.addEventListener('scroll',menuFixed);
 
   function menuFixed(){
-        if(window.scrollY >=1000) {
-            ShowEdu.style.position= 'relative';
-            ShowEdu.style.transition = '0.25 ease-in-out';
+        if(window.scrollY >=200) {
+            ShowNavbar.style.position= 'fixed';
+            ShowNavbar.style.top = '0';
+            ShowNavbar.style.width = '100%';
+            ShowNavbar.style.zIndex ='11';
           }
           else
           {
-            ShowEdu.style.position = 'fixed';
+            ShowNavbar.style.position = 'relative';
+            ShowNavbar.style.backgroundColor ='#232f3e';
+            
+
           }
     };
  
