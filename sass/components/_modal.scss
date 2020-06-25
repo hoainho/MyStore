@@ -337,27 +337,17 @@ html * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-*, *:after, *:before {
-
-
+img.sm_pic {
+    width: 50%;
+    height: 50%;
+    position: relative;
 }
 
 
 
 
-body {
-	font-family: $primary-font; // variables inside partials > _variables.scss
-	color: $maintextcolor;
-	margin: 0 auto;
-	background: $green;
-}
-.wrapper {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
+
+
 	.holdmystuff {
 		background: #ffffff;
 		max-width: 60%;
@@ -395,7 +385,7 @@ body {
 			}
 			}
 		}
-}
+
 
 
 
