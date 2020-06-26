@@ -1974,7 +1974,76 @@ html * {
   font-size: 1rem;
   position: relative;
   width: 40%;
-  text-align: LEFT; }
+  text-align: left; }
+
+.sm-right--content_ability {
+  width: 100%;
+  display: flex; }
+  .sm-right--content_ability__status {
+    left: 0;
+    position: relative;
+    border-right: 1px solid rgba(149, 152, 155, 0.3);
+    padding-right: .9rem;
+    margin-right: .9rem; }
+
+.sm-right--rating {
+  display: inline-block;
+  text-align: unset; }
+  .sm-right--rating_result {
+    margin-left: 5px;
+    width: 65px; }
+    .sm-right--rating_result::before {
+      font-family: fantasy;
+      content: '\f006' '\f006' '\f006' '\f006' '\f006';
+      font-size: 14px;
+      font-weight: 400;
+      height: 13px;
+      letter-spacing: 0;
+      line-height: 1;
+      top: 0;
+      color: #eee;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      -webkit-font-smoothing: antialiased;
+      color: #c7c7c7;
+      font-family: 'icons-blank-theme';
+      font-size: 28px;
+      height: 28px;
+      letter-spacing: -10px;
+      line-height: 28px;
+      content: '\e605' '\e605' '\e605' '\e605' '\e605';
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      speak: none; }
+    .sm-right--rating_result__summary {
+      width: 80%; }
+      .sm-right--rating_result__summary::before {
+        font-family: fantasy;
+        content: '\f006' '\f006' '\f006' '\f006' '\f006';
+        font-size: 14px;
+        font-weight: 400;
+        height: 13px;
+        line-height: 13px;
+        letter-spacing: 0;
+        color: #ffba42; }
+    .sm-right--rating_result__summar > .sm-right--rating_result__summary::before {
+      position: relative;
+      z-index: 2;
+      -webkit-font-smoothing: antialiased;
+      color: #ff5501;
+      font-family: 'icons-blank-theme';
+      font-size: 28px;
+      height: 28px;
+      letter-spacing: -10px;
+      line-height: 28px;
+      content: '\e605' '\e605' '\e605' '\e605' '\e605';
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      speak: none; }
 
 .holdmystuff {
   background: #ffffff;
