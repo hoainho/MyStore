@@ -13,9 +13,9 @@ window.onload = function(){
   const LGsize = document.querySelector(".navbar-content--header_main__features___logo-box--logo");
   window.addEventListener('scroll',logosize);
   window.addEventListener('scroll',logofixed);
-  //Cart
-  const CartN = document.querySelectory(".navbar-content--header_main__features___control-cart--name");
-  const CartI = document.querySelectory(".navbar-content--header_main__features___control-cart--icon");
+  //Cart 
+  const CartN = document.querySelector(".navbar-content--header_main__features___control-cart--name");
+  const CartI = document.querySelector(".navbar-content--header_main__features___control-cart--icon");
   const CartBox =document.querySelector(".navbar-content--header_main__features___control-cart");
   window.addEventListener('scroll',Cart);
   window.addEventListener('scroll',CartName);
@@ -62,10 +62,11 @@ window.onload = function(){
         LGsize.style.fontSize ='5rem';
       }
     }
+    //CART function
     function Cart(){
       if(window.scrollY >=200 ){
         CartBox.style.position ='fixed';
-        CartBox.style.right ='-4rem';
+        CartBox.style.left ='80rem';
         CartBox.style.top ='-2rem';
         CartBox.style.width = '20%';
         CartBox.style.height ='20%';
@@ -73,10 +74,9 @@ window.onload = function(){
       }
       else{
         CartBox.style.position ='relative';
-        CartBox.style.left ='3rem';
-        CartBox.style.top ='-2rem';
+        CartBox.style.top ='0rem';
         CartBox.style.height ='100%';
-        
+        CartBox.style.left ='3rem';
         
       }
     }
