@@ -1988,62 +1988,75 @@ html * {
 
 .sm-right--rating {
   display: inline-block;
-  text-align: unset; }
+  text-align: unset;
+  width: 100%;
+  margin-top: .6rem; }
   .sm-right--rating_result {
-    margin-left: 5px;
-    width: 65px; }
-    .sm-right--rating_result::before {
-      font-family: fantasy;
-      content: '\f006' '\f006' '\f006' '\f006' '\f006';
-      font-size: 14px;
-      font-weight: 400;
-      height: 13px;
-      letter-spacing: 0;
-      line-height: 1;
-      top: 0;
-      color: #eee;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      -webkit-font-smoothing: antialiased;
-      color: #c7c7c7;
-      font-family: 'icons-blank-theme';
-      font-size: 28px;
-      height: 28px;
-      letter-spacing: -10px;
-      line-height: 28px;
-      content: '\e605' '\e605' '\e605' '\e605' '\e605';
-      display: block;
-      font-style: normal;
-      font-weight: 400;
-      speak: none; }
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
     .sm-right--rating_result__summary {
-      width: 80%; }
-      .sm-right--rating_result__summary::before {
-        font-family: fantasy;
-        content: '\f006' '\f006' '\f006' '\f006' '\f006';
-        font-size: 14px;
-        font-weight: 400;
-        height: 13px;
-        line-height: 13px;
-        letter-spacing: 0;
-        color: #ffba42; }
-    .sm-right--rating_result__summar > .sm-right--rating_result__summary::before {
-      position: relative;
-      z-index: 2;
-      -webkit-font-smoothing: antialiased;
-      color: #ff5501;
-      font-family: 'icons-blank-theme';
-      font-size: 28px;
-      height: 28px;
-      letter-spacing: -10px;
-      line-height: 28px;
-      content: '\e605' '\e605' '\e605' '\e605' '\e605';
-      display: block;
-      font-style: normal;
-      font-weight: 400;
-      speak: none; }
+      color: #ff7e00;
+      width: 100%;
+      border-right: 1px solid rgba(149, 152, 155, 0.3) !important;
+      text-align: center; }
+  .sm-right--rating_review {
+    width: 100%;
+    color: #95989b; }
+
+.sm-right--price {
+  display: flex;
+  width: 100%;
+  margin-top: .6rem; }
+  .sm-right--price_present {
+    width: 50%;
+    border-right: 1px solid rgba(149, 152, 155, 0.3); }
+  .sm-right--price_old {
+    width: 50%; }
+    .sm-right--price_old::before {
+      top: 70% !important;
+      border-top: 1px double #ff7e00; }
+
+.sm-right--control {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 3rem; }
+  .sm-right--control_box {
+    width: 40%;
+    border: 1px solid rgba(149, 152, 155, 0.3);
+    border-radius: 30px;
+    margin: 0 1rem;
+    position: relative; }
+  .sm-right--control_reduction {
+    position: relative;
+    top: 15%;
+    cursor: pointer;
+    color: rgba(149, 152, 155, 0.3); }
+    .sm-right--control_reduction:hover, .sm-right--control_reduction:active, .sm-right--control_reduction:link, .sm-right--control_reduction:visited {
+      color: #ff7e00; }
+  .sm-right--control_number {
+    position: relative;
+    margin: 0 2rem;
+    top: 15%; }
+  .sm-right--control_increase {
+    position: relative;
+    top: 15%;
+    cursor: pointer;
+    color: rgba(149, 152, 155, 0.3); }
+    .sm-right--control_increase:hover, .sm-right--control_increase:active, .sm-right--control_increase:link, .sm-right--control_increase:visited {
+      color: #ff7e00; }
+  .sm-right--control_add {
+    width: 40%;
+    left: 7%; }
+
+.sm-icon--item {
+  transition: .01s ease-in-out .01s; }
+  .sm-icon--item:hover, .sm-icon--item:active, .sm-icon--item:link, .sm-icon--item:visited {
+    background-color: #ff7e00 !important; }
+  .sm-icon--item:hover, .sm-icon--item:active, .sm-icon--item:link,
+  .sm-icon--item:visited .sm-icon--item--link {
+    color: #fff !important; }
 
 .holdmystuff {
   background: #ffffff;
@@ -2402,7 +2415,9 @@ html * {
       left: 0;
       top: 0;
       bottom: 0;
-      color: rgba(30, 30, 30, 0.7);
+      color: #242424;
+      font-weight: bold;
+      font-size: 2rem;
       text-transform: uppercase;
       margin: 0 auto;
       display: inline-block;
