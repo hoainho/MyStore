@@ -1945,13 +1945,13 @@ html * {
     margin: .2rem;
     border: 1px solid orange;
     position: relative;
-    width: 3vw;
-    height: 6vh; }
+    width: 4vw !important;
+    height: 8vh;
+    cursor: pointer; }
   .sm_box_link {
     position: relative;
-    width: 50%;
-    height: 50%;
-    top: 20%; }
+    width: 100%;
+    height: 100%; }
 
 .sm-right--content_name {
   color: #ff7e00;
@@ -2139,6 +2139,7 @@ html * {
   -moz-justify-content: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.85);
+  background-image: url("../../img/bgproducttab1.png");
   z-index: 13;
   display: none;
   font-size: 1em;
