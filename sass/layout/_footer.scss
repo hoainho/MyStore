@@ -14,9 +14,9 @@
             position: relative;
             width: 44%;
             left: 38%;
-            z-index: 2; 
             &_box{
               width: 72% !important;
+              z-index: 0 !important;
             }
             &__icon{
                 
@@ -26,7 +26,6 @@
             }
         }
         &--rock{
-            z-index: 2;
             position: absolute;
             width: 100%;
             top: 6rem;

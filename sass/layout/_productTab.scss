@@ -3,7 +3,7 @@
     width: 100%;
     position: relative;
     &--category{
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
     &--categoryKB{
         margin-top: 0rem;
@@ -170,6 +170,18 @@
                             position: relative;
                             top: 25%;
                             left: 25%;
+                        }
+                        &--link{
+                            &:hover,
+                            &:active,
+                            &:link,
+                            &:visited,
+                            &:focus{
+                                outline: none;
+                                border: none;
+                                color: $color-white !important;
+                                text-decoration: none;
+                            }
                         }
                     }
                     &-button{
