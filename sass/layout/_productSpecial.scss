@@ -2,6 +2,9 @@
     width: 100%;
     height: 100%;
     position: relative;
+    background-image: url(../../img/bgproducttab3.png);
+    background-size: 7rem;
+    background-repeat: no-repeat;
     &--container{
         margin: 0 10rem;
         &_box{
@@ -125,9 +128,9 @@
                     left: -2rem;
                 }
                 &--rightbanner{
-                    top: 2rem;
-                    left: -4rem;
-                    height: 16vh;
+                    top: 3rem;
+                    left: -3rem;
+                    height: 13vh;
                 }
             }
             &__content{
