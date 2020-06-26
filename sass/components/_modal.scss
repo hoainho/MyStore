@@ -410,15 +410,15 @@ html * {
 		&_ability{
 			width: 100%;
 			display: flex;
+			border-top: 1px solid orange;
 			&__status{
-				left: 0;
-				position: relative;
-				border-right: 1px solid rgba($color-divider,.3);
-				padding-right: .9rem;
-				margin-right: .9rem;
+					width: 50%;
+					border-right: 1px solid orange;
+					border-bottom: 1px solid orange;
 			}
 			&__code{
-
+				border-bottom: 1px solid orange;
+				width: 50%;
 			}
 		}
 		
@@ -427,38 +427,46 @@ html * {
 		display: inline-block;
 		text-align: unset;
 		width: 100%;
-		margin-top: .6rem;
 		&_result{
 			width: 100%;
 			display: flex;
 			flex-direction: row;
 			&__summary{
-				
 				color: $color-primary;
-				width: 100%;
-				border-right: 1px solid rgba($color-divider,.3) !important;
+				width: 50%;
+				border-left: 1px solid $color-primary;
+				border-bottom: 1px solid $color-primary;
 				text-align: center;
 			}
 			}
 			
 		&_review{
-			width: 100%;
-			color: $color-divider;
+			width: 42%;
+			position: relative;
+			color: #95989b;
+			border-right: 1px solid $color-primary;
+			border-bottom: 1px solid $color-primary;
+			left: 5%;
 		}
 	}
 		
 	&--price{
 		display: flex;
 		width: 100%;
-		margin-top: .6rem;
 		&_present{
 			width: 50%;
-			border-right: 1px solid rgba($color-divider,.3) ;
+			border-right: 1px solid $color-primary;
+			border-bottom: 1px solid $color-primary;
 		}
 		&_old{
-			width:50%;
+			width: 40%;
+			border-left: 1px solid $color-primary;
+			border-bottom: 1px solid $color-primary;
+			border-top: 0px;
+			position: relative;
+			left: 5%;
 			&::before{
-				top: 70% !important;
+				top:55% !important;
     			border-top: 1px double $color-primary;
 			}
 		}
@@ -718,13 +726,15 @@ html * {
 			@include transition(all, .3s, ease, 0s);
 		}
 		.sm_header {
+			font-family: serif;
 			box-sizing: border-box;
 			right: 0;
 			left: 0;
 			top: 0;
 			bottom: 0;
-			color: $color-textdark;
-			font-weight: bold;
+			color: transparent; 
+			-webkit-text-stroke: 0.1rem $color-primary;
+			font-weight: 900;
 			font-size: 2rem;
 			text-transform: uppercase;
 			margin: 0 auto;
@@ -732,6 +742,7 @@ html * {
 			height: $sm_header_height;
 			line-height: $sm_header_height;
 			opacity: 0;
+			
 			@include transition(all, .3s, ease, 0s);
 			@include MQ(XS) {position: relative;width: 100%;background: darken(#ffffff, 10%);@include border-radius(0px);padding-top: 0;}
 			@include MQ(S) {position: relative;width: 100%;background: darken(#ffffff, 10%);@include border-radius(0px);padding-top: 0;}
