@@ -10,7 +10,7 @@ button.slick-prev.slick-arrow {
     
     background-color: transparent;
     width: 4%;
-    height: 11%;
+    height: 14%;
     border: 1px solid $color-divider;
     border-radius: 50%;
     z-index: 10;
@@ -32,7 +32,7 @@ button.slick-next.slick-arrow {
     }
     background-color: transparent;
     width: 4%;
-    height: 11%;
+    height: 14%;
     border: 1px solid $color-divider ;
     border-radius: 50%;
     z-index: 10;
@@ -46,4 +46,7 @@ button.slick-next.slick-arrow {
             color: $color-white !important;
         }
     }
+}
+.tab-content > .active, .pill-content > .active{
+    height: 39vh !important;
 }
