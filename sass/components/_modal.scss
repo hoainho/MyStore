@@ -337,12 +337,105 @@ html * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-img.sm_pic {
-    width: 50%;
-    height: 50%;
-    position: relative;
+.sm_box {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+	&_pic{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		border: 1px solid rgba($color-divider,.3);
+		&_details{
+		    width: 100%;
+			height: 100%;
+			position: relative;
+		}
+	}
+	&_list{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		list-style-type: none;
+		padding: 1rem 1rem 0;
+		margin: 0 !important;
+	}
+	&_item
+	{
+		margin: .2rem;
+		border: 1px solid orange;
+		position: relative;
+		width: 3vw;
+		height: 6vh;
+	}
+	&_link{
+		position: relative;
+		width: 50%;
+		height: 50%;
+		top: 20%;
+	}
 }
+.sm-right{
+	&--content
+	{
+		&_name{
+			color: $color-primary;
+			font-family: fantasy;
+		}
+		&_list{
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			justify-content: center;
+			list-style-type: none;
+		}
+		&_item{
+			margin: .2rem .5rem;
+			padding: 0 .5REM;
+			border-left: 10px solid $color-primary;
+			height: 4vh;
+		}
+		&_introduce{
+			font-size: 1rem;
+			position: relative;
+			width: 40%;
+			text-align: LEFT;
+		}
+		&_ability{
+			&__status{
 
+			}
+			&__code{
+
+			}
+		}
+		
+	}
+	&--rating{
+		&_result{
+			&__summary{
+
+			}
+		}
+		&_review{
+
+		}
+	}
+	&--price{
+		&_present{
+
+		}
+		&_old{
+
+		}
+	}
+}
 
 
 
@@ -387,7 +480,17 @@ img.sm_pic {
 		}
 
 
-
+.slim_modal 
+.sm_content 
+.sm_content_inner_wrap 
+.sm_area_top, .slim_modal 
+.sm_content .sm_content_inner_wrap 
+.sm_area_bottom, 
+.slim_modal 
+.sm_content .sm_content_inner_wrap
+ .sm_area_all {
+	padding: 1rem !important;
+}
 
 // This is just a straightforward flexbox-based modal you can use as is, or to learn from and build-upon. I became frustrated doing over-ride css with the framework libraries out there (Foundation, Bootstrap, Semantic UI, etc.).
 
@@ -402,7 +505,7 @@ img.sm_pic {
 	@include align-items(center);
 	@include justify-content(center);
 	background: rgba(0,0,0,0.85);
-	z-index: 2;
+	z-index: 13;
 	display: none;
 	font-size: 1em;
 	@include transition(background, .5s, ease, .06s);
