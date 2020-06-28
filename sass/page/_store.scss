@@ -48,19 +48,14 @@
                 margin: .5rem .25rem;
                 &::before{
                     content: '';
-                    position: absolute;
-                    width:50%;
-                    border-top: 2px solid $color-primary;
-                    top:2.75rem;
+                    width: 60%;
+                    height: 2px;
+                    display: block;
+                    position: relative;
+                    left: 0;
+                    top: 2.35rem;
+                    background-color:$color-primary;
                     transition: .25s ease-in-out .25s;
-                }
-                &::after{
-                    content: '';
-                    position: absolute;
-                    width:90%;
-                    border-top: 2px solid rgba($color-divider, .1);
-                    top:2.75rem;
-                    left: 1.2rem;
                 }
                 &__checkbox{
                     position: absolute;
@@ -72,27 +67,55 @@
                 &__checkbox:checked ~ &__options{
                     display: block;
                 }
+                &__checkbox:checked ~ .store-main--control_icon{
+                    transform: rotate(90deg);
+                }
                 &__options{
                     position: relative;
                     display: none;
                     list-style-type: none;
                     &-item{
                         margin: .2rem 0;
+                        padding: .5rem 0;
                         display: flex;
                         flex-direction: row;
-
+                        border-bottom: 1px solid rgba($color-divider, .1);  
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 0%;
+                            border-bottom:1px solid $color-primary;
+                        }
+                        &:nth-child(1)::before{
+                            top: 2.5rem;
+                            width: 45%;
+                        }
+                        &:nth-child(2)::before{
+                            top: 5.3rem;
+                            width: 40%;
+                        }
+                        &:nth-child(3)::before{
+                            top: 8rem;
+                            width: 40%;
+                        }
+                        &:nth-child(4)::before{
+                            top: 10.8rem;
+                            width: 45%;
+                        }
                     }
                     &-link{
+                        position: relative;
                         font-family: serif;
                         font-size: 1rem;
                         text-decoration: none;
-                        color: rgba($color-textdark,.5);
+                        color: rgba($color-textdark,.8);
                         margin: 0 .2rem;
+                        border-bottom: 2px solid rgba($color-divider, .1);
                         &:hover,
-                        &:active,
-                        &:link{
+                        &:active{
                             color: $color-primary;
                             text-decoration: none;
+                            left: .2rem;
                         }
                     }
                     &-number{
@@ -120,7 +143,9 @@
                 }
             }
             &_icon{
-                margin-left: 6rem;
+                position: absolute;
+                right: .5rem;
+                top: 1rem;
                 color: $color-textdark;
                 &:hover,
                 &:active,
