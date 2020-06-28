@@ -34,8 +34,7 @@ window.onload = function(){
           {
             ShowNavbar.style.position = 'relative';
             ShowNavbar.style.backgroundColor ='#232f3e';
-            
-
+            ShowNavbar.style.zIndex ='1';
           }
     };
   function logofixed(){
