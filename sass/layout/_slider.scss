@@ -1,7 +1,11 @@
 .slider {
-    margin: 1rem;
+    padding: 2rem 0;
+    margin-bottom: 4rem;
     height: 83vh;
     position: relative;
+    background-image: url(../../img/bgproducttab.png);
+    background-size: 95rem;
+    background-repeat: no-repeat; 
     &-content{
         margin: 0 10rem;
         &--tv{

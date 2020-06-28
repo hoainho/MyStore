@@ -858,9 +858,13 @@ input[type="radio"] {
   border-radius: 0 0 4px 4px; }
 
 .slider {
-  margin: 1rem;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
   height: 83vh;
-  position: relative; }
+  position: relative;
+  background-image: url(../../img/bgproducttab.png);
+  background-size: 95rem;
+  background-repeat: no-repeat; }
   .slider-content {
     margin: 0 10rem; }
     .slider-content--tv {
@@ -2676,3 +2680,30 @@ html * {
   .sm_content.green .sm_header {
     background: #a9cd99;
     color: #ffffff; }
+
+.store-tittle {
+  width: 100%;
+  position: relative;
+  margin: 0 1rem; }
+  .store-tittle--container {
+    position: relative;
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: start;
+    border-bottom: 1px solid rgba(149, 152, 155, 0.1);
+    padding: 1.5rem 0; }
+    .store-tittle--container_home {
+      font-size: .8rem;
+      text-decoration: none;
+      color: rgba(36, 36, 36, 0.5); }
+      .store-tittle--container_home:hover, .store-tittle--container_home:active, .store-tittle--container_home:link {
+        text-decoration: none;
+        color: #242424; }
+    .store-tittle--container_iconpresent {
+      font-size: .8rem;
+      margin: 0 1rem; }
+    .store-tittle--container_present {
+      font-size: .8rem;
+      color: #ff7e00; }

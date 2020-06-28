@@ -1,0 +1,36 @@
+.store{
+    &-tittle{
+        width: 100%;
+        position: relative;
+        margin: 0 1rem;
+        &--container{
+            position: relative;
+            margin: 0 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            justify-items: start;
+            border-bottom: 1px solid rgba($color-divider, .1);
+            padding: 1.5rem 0;
+            &_home{
+                font-size: .8rem;
+                text-decoration: none;
+                color: rgba($color-textdark,.5);
+                &:hover,
+                &:active,
+                &:link{
+                    text-decoration: none;
+                    color: $color-textdark;
+                }
+            }
+            &_iconpresent{
+                font-size: .8rem;
+                margin: 0 1rem;
+            }
+            &_present{
+                font-size: .8rem;
+                color: $color-primary;
+            }
+        }
+    }
+}
