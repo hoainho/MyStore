@@ -2707,3 +2707,75 @@ html * {
     .store-tittle--container_present {
       font-size: .8rem;
       color: #ff7e00; }
+
+.store-main--control_list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none; }
+
+.store-main--control_item {
+  margin: .5rem .25rem; }
+  .store-main--control_item::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    border-top: 2px solid #ff7e00;
+    top: 2.75rem;
+    transition: .25s ease-in-out .25s; }
+  .store-main--control_item::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    border-top: 2px solid rgba(149, 152, 155, 0.1);
+    top: 2.75rem;
+    left: 1.2rem; }
+  .store-main--control_item__checkbox {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    opacity: 0;
+    cursor: pointer; }
+  .store-main--control_item__checkbox:checked ~ .store-main--control_item__options {
+    display: block; }
+  .store-main--control_item__options {
+    position: relative;
+    display: none;
+    list-style-type: none; }
+    .store-main--control_item__options-item {
+      margin: .2rem 0;
+      display: flex;
+      flex-direction: row; }
+    .store-main--control_item__options-link {
+      font-family: serif;
+      font-size: 1rem;
+      text-decoration: none;
+      color: rgba(36, 36, 36, 0.5);
+      margin: 0 .2rem; }
+      .store-main--control_item__options-link:hover, .store-main--control_item__options-link:active, .store-main--control_item__options-link:link {
+        color: #ff7e00;
+        text-decoration: none; }
+    .store-main--control_item__options-number {
+      color: #95989b; }
+      .store-main--control_item__options-number:hover, .store-main--control_item__options-number:active, .store-main--control_item__options-number:link {
+        color: #ff7e00;
+        text-decoration: none; }
+
+.store-main--control_link {
+  font-family: serif;
+  text-decoration: none;
+  color: #242424;
+  font-size: 1.5rem; }
+  .store-main--control_link:hover, .store-main--control_link:active, .store-main--control_link:link {
+    color: #ff7e00;
+    text-decoration: none; }
+
+.store-main--control_icon {
+  margin-left: 6rem;
+  color: #242424; }
+  .store-main--control_icon:hover, .store-main--control_icon:active, .store-main--control_icon:link {
+    color: #ff7e00;
+    text-decoration: none; }

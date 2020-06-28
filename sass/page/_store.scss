@@ -33,4 +33,102 @@
             }
         }
     }
+    &-main{
+        &--control{
+            &_list{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding-left:1rem ;
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+            }
+            &_item{
+                margin: .5rem .25rem;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width:50%;
+                    border-top: 2px solid $color-primary;
+                    top:2.75rem;
+                    transition: .25s ease-in-out .25s;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width:90%;
+                    border-top: 2px solid rgba($color-divider, .1);
+                    top:2.75rem;
+                    left: 1.2rem;
+                }
+                &__checkbox{
+                    position: absolute;
+                    width: 100%;
+                    height: 5vh;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                &__checkbox:checked ~ &__options{
+                    display: block;
+                }
+                &__options{
+                    position: relative;
+                    display: none;
+                    list-style-type: none;
+                    &-item{
+                        margin: .2rem 0;
+                        display: flex;
+                        flex-direction: row;
+
+                    }
+                    &-link{
+                        font-family: serif;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: rgba($color-textdark,.5);
+                        margin: 0 .2rem;
+                        &:hover,
+                        &:active,
+                        &:link{
+                            color: $color-primary;
+                            text-decoration: none;
+                        }
+                    }
+                    &-number{
+                        color: $color-divider;
+                        &:hover,
+                        &:active,
+                        &:link{
+                            color: $color-primary;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+            }
+            &_link{
+                font-family: serif;
+                text-decoration: none;
+                color: $color-textdark;
+                font-size: 1.5rem;
+                &:hover,
+                &:active,
+                &:link{
+                    color: $color-primary;
+                    text-decoration: none;
+                }
+            }
+            &_icon{
+                margin-left: 6rem;
+                color: $color-textdark;
+                &:hover,
+                &:active,
+                &:link{
+                    color: $color-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
