@@ -2693,7 +2693,7 @@ html * {
     justify-content: start;
     justify-items: start;
     border-bottom: 1px solid rgba(149, 152, 155, 0.1);
-    padding: 1.5rem 0; }
+    padding: 1rem 0; }
     .store-tittle--container_home {
       font-size: .8rem;
       text-decoration: none;
@@ -2708,19 +2708,17 @@ html * {
       font-size: .8rem;
       color: #ff7e00; }
 
-.store-main--control {
-  position: absolute; }
+.store-main {
+  margin-left: 1rem; }
   .store-main--control_list {
     position: relative;
     width: 100%;
-    height: 100%;
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
     list-style-type: none; }
   .store-main--control_item {
-    margin: .5rem .25rem;
-    height: 100%; }
+    margin: .5rem .25rem; }
     .store-main--control_item::before {
       content: '';
       width: 100%;
@@ -2760,16 +2758,16 @@ html * {
           width: 0%;
           border-bottom: 1px solid #ff7e00; }
         .store-main--control_item__options-item:nth-child(1)::before {
-          top: 2.5rem;
+          top: 2.2rem;
           width: 45%; }
         .store-main--control_item__options-item:nth-child(2)::before {
-          top: 5.3rem;
+          top: 4.7rem;
           width: 40%; }
         .store-main--control_item__options-item:nth-child(3)::before {
-          top: 8rem;
+          top: 7.15rem;
           width: 40%; }
         .store-main--control_item__options-item:nth-child(4)::before {
-          top: 10.8rem;
+          top: 9.6rem;
           width: 45%; }
         .store-main--control_item__options-item--color::before {
           content: '';
@@ -2797,7 +2795,7 @@ html * {
       .store-main--control_item__options-link {
         position: relative;
         font-family: serif;
-        font-size: 1rem;
+        font-size: .8rem;
         text-decoration: none;
         color: rgba(36, 36, 36, 0.8);
         margin: 0 .2rem; }
@@ -2823,7 +2821,8 @@ html * {
           .store-main--control_item__options-link--color_fourth {
             background: linear-gradient(146deg, #dbb259 0%, #d6702c 48%, #d2c944 52%, #952545 100%); }
       .store-main--control_item__options-number {
-        color: #95989b; }
+        color: #95989b;
+        font-size: .5rem; }
         .store-main--control_item__options-number:hover, .store-main--control_item__options-number:active, .store-main--control_item__options-number:link {
           color: #ff7e00;
           text-decoration: none; }
@@ -2832,7 +2831,7 @@ html * {
     font-family: serif;
     text-decoration: none;
     color: #242424;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: -1; }
     .store-main--control_link:hover, .store-main--control_link:active, .store-main--control_link:link {
       color: #ff7e00;
@@ -2854,48 +2853,29 @@ html * {
         color: #ff7e00;
         text-decoration: none; }
   .store-main--control_banner {
-    padding-left: 1rem;
     margin-top: 2rem; }
-    .store-main--control_banner__container::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 1;
-      -webkit-transition: all .5s ease-in-out;
-      -o-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-      height: 1px;
-      top: 16rem;
-      left: 50%;
-      right: 50%;
-      background-color: #fff; }
-    .store-main--control_banner__container::after {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 1;
-      -webkit-transition: all .5s ease-in-out;
-      -o-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-      height: 1px;
-      bottom: 10px;
-      left: 50%;
-      right: 50%;
-      background-color: #fff; }
-    .store-main--control_banner__container-hover {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 1;
-      -webkit-transition: all .5s ease-in-out;
-      -o-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-      width: 1px;
-      right: 2rem;
-      top: 75%;
-      bottom: 25%;
-      background-color: #fff; }
-      .store-main--control_banner__container-hover::before {
+    .store-main--control_banner__container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      overflow: hidden;
+      background: linear-gradient(-45deg, #95989b, #fff, #95989b, transparent);
+      animation: gradient 10s ease infinite;
+      background-size: 400% 400%; }
+      .store-main--control_banner__container::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        height: 1px;
+        top: 10px;
+        left: 50%;
+        right: 50%;
+        background-color: #fff; }
+      .store-main--control_banner__container::after {
         content: "";
         position: absolute;
         display: block;
@@ -2904,28 +2884,108 @@ html * {
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
         width: 1px;
-        right: 10.8rem;
-        top: 75%;
-        bottom: 25%;
+        left: 10px;
+        top: 50%;
+        bottom: 50%;
         background-color: #fff; }
-      .store-main--control_banner__container-hover-banner::before {
-        right: 45.5rem !important; }
-    .store-main--control_banner__container:hover::before {
-      left: 19%;
-      right: 12.5%; }
-    .store-main--control_banner__container:hover::after {
-      left: 19%;
-      right: 12.5%; }
-    .store-main--control_banner__container:hover ~ .store-main--control_banner__container-hover {
-      top: 47.5% !important;
-      bottom: 2% !important; }
-    .store-main--control_banner__container:hover ~ .store-main--control_banner__container-hover::before {
-      top: 0% !important;
-      bottom: 0% !important; }
-    .store-main--control_banner__container-link--pic {
-      position: relative;
+      .store-main--control_banner__container:hover::before {
+        left: 10px;
+        right: 10px; }
+      .store-main--control_banner__container:hover::after {
+        top: 10px;
+        bottom: 10px; }
+      .store-main--control_banner__container:hover .store-main--control_banner__container-link::before {
+        left: 10px;
+        right: 10px; }
+      .store-main--control_banner__container:hover .store-main--control_banner__container-link::after {
+        top: 10px;
+        bottom: 10px; }
+      .store-main--control_banner__container-link::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        height: 1px;
+        bottom: 10px;
+        left: 50%;
+        right: 50%;
+        background-color: #fff; }
+      .store-main--control_banner__container-link::after {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        width: 1px;
+        right: 10px;
+        top: 50%;
+        bottom: 50%;
+        background-color: #fff; }
+      .store-main--control_banner__container-link--pic {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+  .store-main--container_banner {
+    background: linear-gradient(-45deg, #95989b, #fff, #95989b, transparent);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-right: 1rem; }
+    .store-main--container_banner__pic-product {
+      position: absolute;
       width: 100%;
-      height: 100%; }
+      height: 32vh;
+      left: 0;
+      z-index: 1; }
+    .store-main--container_banner__pic-bg {
+      height: 31vh;
+      width: 20%;
+      position: relative;
+      z-index: 2; }
+    .store-main--container_banner__content {
+      position: relative;
+      right: 0;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      z-index: 2; }
+      .store-main--container_banner__content-slogan {
+        width: 100%;
+        text-align: center; }
+      .store-main--container_banner__content-name {
+        width: 100%;
+        text-align: center; }
+      .store-main--container_banner__content-introduce {
+        width: 100%; }
+      .store-main--container_banner__content-buy {
+        width: 26%;
+        padding: .5rem;
+        position: relative;
+        border: 1px solid rgba(149, 152, 155, 0.1);
+        border-radius: 30px;
+        left: 39%;
+        outline: none;
+        cursor: pointer; }
+        .store-main--container_banner__content-buy:active, .store-main--container_banner__content-buy:link, .store-main--container_banner__content-buy:focus, .store-main--container_banner__content-buy:visited {
+          border: 1px solid rgba(168, 81, 0, 0.1);
+          background: #d8812f;
+          background: linear-gradient(201deg, #d8812f 29%, rgba(216, 129, 47, 0) 31%, #d8812f 33%, #d8812f 46%, rgba(216, 129, 47, 0) 48%, #d8812f 50%, #d8812f 66%, rgba(216, 129, 47, 0) 68%, #d8812f 70%);
+          color: #fff;
+          outline: none; }
+        .store-main--container_banner__content-buy:hover {
+          background: #ff7e00;
+          border: 1px solid rgba(255, 126, 0, 0.1);
+          color: #fff;
+          outline: none; }
 
 /* This line can be removed it was just for display on CodePen: */
 .container {
@@ -2939,8 +2999,8 @@ html * {
   font-weight: bold;
   font-size: 1.1rem;
   color: #ff7e00;
-  width: 40%;
-  left: 2.5rem; }
+  width: 37%;
+  left: 2rem; }
 
 /* Functional styling;
    * These styles are required for noUiSlider to function.
