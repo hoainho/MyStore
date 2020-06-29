@@ -11,7 +11,7 @@
             justify-content: start;
             justify-items: start;
             border-bottom: 1px solid rgba($color-divider, .1);
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             &_home{
                 font-size: .8rem;
                 text-decoration: none;
@@ -34,12 +34,12 @@
         }
     }
     &-main{
+        margin-left: 1rem;
         &--control{
-            position: absolute;
+            
             &_list{
                 position: relative;
                 width: 100%;
-                height: 100%;
                 padding-left:1rem ;
                 display: flex;
                 flex-direction: column;
@@ -47,7 +47,6 @@
             }
             &_item{
                 margin: .5rem .25rem;
-                height: 100%;
                 &::before{
                     content: '';
                     width: 100%;
@@ -95,19 +94,19 @@
                             border-bottom:1px solid $color-primary;
                         }
                         &:nth-child(1)::before{
-                            top: 2.5rem;
+                            top: 2.2rem;
                             width: 45%;
                         }
                         &:nth-child(2)::before{
-                            top: 5.3rem;
+                            top: 4.7rem;
                             width: 40%;
                         }
                         &:nth-child(3)::before{
-                            top: 8rem;
+                            top: 7.15rem;
                             width: 40%;
                         }
                         &:nth-child(4)::before{
-                            top: 10.8rem;
+                            top: 9.6rem;
                             width: 45%;
                         }
                         &--color{
@@ -148,7 +147,7 @@
                     &-link{
                         position: relative;
                         font-family: serif;
-                        font-size: 1rem;
+                        font-size: .8rem;
                         text-decoration: none;
                         color: rgba($color-textdark,.8);
                         margin: 0 .2rem;
@@ -189,6 +188,7 @@
                     }
                     &-number{
                         color: $color-divider;
+                        font-size: .5rem;
                         &:hover,
                         &:active,
                         &:link{
@@ -205,7 +205,7 @@
                 font-family: serif;
                 text-decoration: none;
                 color: $color-textdark;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 z-index: -1;    
                 &:hover,
                 &:active,
@@ -239,9 +239,16 @@
                 }
             }
             &_banner{
-                padding-left: 1rem;
                 margin-top: 2rem;
+                
                 &__container{
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: linear-gradient(-45deg, $color-divider, $color-white, $color-divider,transparent);
+                    animation: gradient 10s ease infinite;
+                    background-size: 400% 400% ;
                     &::before{
                         content: "";
                         position: absolute;
@@ -251,7 +258,7 @@
                         -o-transition: all .5s ease-in-out;
                         transition: all .5s ease-in-out;
                         height: 1px;
-                        top: 16rem;
+                        top: 10px;
                         left: 50%;
                         right: 50%;
                         background-color: $color-white;
@@ -264,26 +271,32 @@
                         -webkit-transition: all .5s ease-in-out;
                         -o-transition: all .5s ease-in-out;
                         transition: all .5s ease-in-out;
-                        height: 1px;
-                        bottom: 10px;
-                        left: 50%;
-                        right: 50%;
+                        width: 1px;
+                        left: 10px;
+                        top: 50%;
+                        bottom: 50%;
                         background-color: $color-white;
                     }
                     
-                    &-hover{
-                        content: "";
-                        position: absolute;
-                        display: block;
-                        z-index: 1;
-                        -webkit-transition: all .5s ease-in-out;
-                        -o-transition: all .5s ease-in-out;
-                        transition: all .5s ease-in-out;
-                        width: 1px;
-                        right: 2rem;
-                        top: 75%;
-                        bottom: 25%;
-                        background-color: $color-white;
+                    &:hover{ 
+                        &::before  {
+                                left: 10px; 
+                                right: 10px;
+                        }
+                        &::after  {
+                            top: 10px;
+                            bottom: 10px;
+                        }
+                    }
+                    &:hover  &-link::before{
+                        left: 10px;
+                        right: 10px;
+                    }
+                    &:hover  &-link::after{
+                        top: 10px;
+                        bottom: 10px;
+                    }
+                    &-link{
                         &::before{
                             content: "";
                             position: absolute;
@@ -292,41 +305,106 @@
                             -webkit-transition: all .5s ease-in-out;
                             -o-transition: all .5s ease-in-out;
                             transition: all .5s ease-in-out;
-                            width: 1px;
-                            right: 10.8rem;
-                            top: 75%;
-                            bottom: 25%;
+                            height: 1px;
+                            bottom: 10px;
+                            left: 50%;
+                            right: 50%;
                             background-color: $color-white;
                         }
-                        &-banner{
-                            &::before{
-                                right: 45.5rem !important;
-                            }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            z-index: 1;
+                            -webkit-transition: all .5s ease-in-out;
+                            -o-transition: all .5s ease-in-out;
+                            transition: all .5s ease-in-out;
+                            width: 1px;
+                            right: 10px;
+                            top: 50%;
+                            bottom: 50%;
+                            background-color: $color-white;
                         }
-                    }
-                    &:hover{ 
-                        &::before  {
-                            left: 19%;
-                            right: 12.5%;
-                        }
-                        &::after  {
-                            left: 19%;
-                            right: 12.5%;
-                        }
-                    }
-                    &:hover ~ &-hover{
-                        top: 47.5% !important;
-                        bottom: 2% !important;
-                    }
-                    &:hover ~ &-hover::before{
-                        top: 0% !important;
-                        bottom: 0% !important;
-                    }
-                    &-link{
-                        &--pic{
-                            position: relative;
+                        &--pic{ 
+                        position: relative;
                         width: 100%;
                         height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &--container{
+            
+            &_banner{
+                    background: linear-gradient(-45deg, $color-divider, $color-white, $color-divider,transparent);
+                    animation: gradient 10s ease infinite;
+                    background-size: 400% 400% ;
+                    display: flex;
+                    position: relative;
+                    justify-content: space-around;
+                    padding-right: 1rem;
+                &__pic{
+                    &-product{
+                        position: absolute;
+                        width: 100%;
+                        height: 32vh;
+                        left: 0;
+                        z-index: 1;
+                    }
+                    &-bg{
+                        height: 31vh;
+                        width: 20%;
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+                &__content{
+                    position: relative;
+                    right: 0;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    justify-items: center;
+                    z-index: 2;
+                    &-slogan{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    &-name{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    &-introduce{
+                        width: 100%;
+                    }
+                    &-buy{
+                        width: 26%;
+                        padding: .5rem;
+                        position: relative;
+                        border: 1px solid rgba($color-divider, .1);
+                        border-radius: 30px;
+                        left: 39%;
+                        outline: none;
+                        cursor: pointer;
+                        &:active,
+                        &:link,
+                        &:focus,
+                        &:visited
+                        {
+                            border: 1px solid rgba($color-primary-dark, .1);
+                            background: rgb(216,129,47);
+                            background: linear-gradient(201deg, rgba(216,129,47,1) 29%, rgba(216,129,47,0) 31%, rgba(216,129,47,1) 33%, rgba(216,129,47,1) 46%, rgba(216,129,47,0) 48%, rgba(216,129,47,1) 50%, rgba(216,129,47,1) 66%, rgba(216,129,47,0) 68%, rgba(216,129,47,1) 70%);
+
+                            color: $color-white;
+                            outline: none;
+                        }
+                        &:hover{
+                            background: $color-primary;
+                            border: 1px solid rgba($color-primary, .1);
+                            color: $color-white;
+                            outline: none;
                         }
                     }
                 }
