@@ -408,6 +408,7 @@
                 }
             }
             &_menu{
+                margin-top: 2rem;
                 &-options{
                     display: flex;
                     flex-direction: row;
@@ -419,6 +420,14 @@
 
                         }
                         &_multi{
+                            background-color: rgba($color-divider, .1) !important;
+                            border-radius: 50% !important;
+                            color: $color-primary !important;
+                            &:hover{
+                                color: $color-white !important;       
+                                background: rgb(255,126,0) !important;
+                                background: radial-gradient(circle, rgba(255,126,0,1) 8%, rgba(255,126,0,1) 44%, rgba(255,126,0,0) 44%, rgba(255,126,0,1) 66%, rgba(255,126,0,1) 77%, rgba(255,126,0,1) 95%)  !important;
+                            }
                             &::before{
                                 content: "\f00a";
                                 display: inline-block;
@@ -426,11 +435,18 @@
                                 font-size: inherit;
                                 text-rendering: auto;
                                 -webkit-font-smoothing: antialiased;
-                                background: linear-gradient(0deg, rgba(216,129,47,1) 0%, rgba(216,129,47,0.45171572046787467) 100%, rgba(216,129,47,0) 100%) !important;
-
+                                
                             }
                         }
-                        &_single{
+                        &_single{ 
+                            background-color: rgba($color-divider, .1) !important;
+                            color: $color-primary !important;
+                            border-radius: 50% !important;
+                            &:hover{
+                                color: $color-white !important;       
+                                background: rgb(255,126,0) !important;
+                                background: radial-gradient(circle, rgba(255,126,0,1) 8%, rgba(255,126,0,1) 44%, rgba(255,126,0,0) 44%, rgba(255,126,0,1) 66%, rgba(255,126,0,1) 77%, rgba(255,126,0,1) 95%)  !important;
+                            }
                             &::before{
                                 content: "\f0c9";
                                 display: inline-block;
@@ -438,9 +454,29 @@
                                 font-size: inherit;
                                 text-rendering: auto;
                                 -webkit-font-smoothing: antialiased;
-                                background: rgb(35,47,62);
-                                background: linear-gradient(0deg, rgba(35,47,62,1) 0%, rgba(35,47,62,0) 100%, rgba(35,47,62,1) 100%) !important;
-                                
+                               
+                            }
+                        }
+                    }
+                    &--rating{
+                        &_box{
+                           
+                            &__container{
+                                border-radius: 30px !important;
+                                &-select{
+
+                                }
+                            }
+                        }
+                    }
+                    &--sort{
+                        &_box{
+                           
+                            &__container{
+                                border-radius: 30px !important;
+                                &-select{
+                                    background-color: red !important;
+                                }
                             }
                         }
                     }
