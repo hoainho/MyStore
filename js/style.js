@@ -3,6 +3,8 @@
 AOS.init({
   
   });
+  //select
+  $('#mySelect').selectpicker();
 //LoadPage follow to CrollY
 window.onload = function(){
   //Menu
