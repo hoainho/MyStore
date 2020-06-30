@@ -44,6 +44,71 @@
 .active-W {
   width: 100% !important; }
 
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px; }
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #ff7e00;
+  width: 7rem;
+  height: 40px; }
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(149, 152, 155, 0.1);
+  padding: 8px 15px;
+  border-radius: 30px; }
+  .select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #ff7e00 transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px; }
+  .select-styled:hover {
+    background-color: rgba(149, 152, 155, 0.2); }
+  .select-styled:active, .select-styled.active {
+    background-color: rgba(149, 152, 155, 0.1); }
+    .select-styled:active:after, .select-styled.active:after {
+      top: 9px;
+      border-color: transparent transparent #ff7e00 transparent; }
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(149, 152, 155, 0.1);
+  border-radius: 10px; }
+  .select-options li {
+    margin: 0;
+    padding: 5px 0;
+    text-indent: 13px; }
+    .select-options li:hover {
+      color: #ff7e00;
+      background: rgba(149, 152, 155, 0.5);
+      border-radius: 30px; }
+    .select-options li[rel="hide"] {
+      display: none; }
+    .select-options li[rel="hide"] {
+      display: none; }
+
 .tab-content > .tab-pane, .pill-content > .pill-pane {
   display: block;
   height: 0; }
@@ -2984,29 +3049,50 @@ html * {
           border: 1px solid rgba(255, 126, 0, 0.1);
           color: #fff;
           outline: none; }
-  .store-main--container_menu-options {
-    display: flex;
-    flex-direction: row;
-    place-content: space-between; }
-    .store-main--container_menu-options--list {
-      height: 100%; }
-      .store-main--container_menu-options--list_multi::before {
-        content: "\f00a";
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        background: linear-gradient(0deg, #d8812f 0%, rgba(216, 129, 47, 0.451716) 100%, rgba(216, 129, 47, 0) 100%) !important; }
-      .store-main--container_menu-options--list_single::before {
-        content: "\f0c9";
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        background: #232f3e;
-        background: linear-gradient(0deg, #232f3e 0%, rgba(35, 47, 62, 0) 100%, #232f3e 100%) !important; }
+  .store-main--container_menu {
+    margin-top: 2rem; }
+    .store-main--container_menu-options {
+      display: flex;
+      flex-direction: row;
+      place-content: space-between; }
+      .store-main--container_menu-options--list {
+        height: 100%; }
+        .store-main--container_menu-options--list_multi {
+          background-color: rgba(149, 152, 155, 0.1) !important;
+          border-radius: 50% !important;
+          color: #ff7e00 !important; }
+          .store-main--container_menu-options--list_multi:hover {
+            color: #fff !important;
+            background: #ff7e00 !important;
+            background: radial-gradient(circle, #ff7e00 8%, #ff7e00 44%, rgba(255, 126, 0, 0) 44%, #ff7e00 66%, #ff7e00 77%, #ff7e00 95%) !important; }
+          .store-main--container_menu-options--list_multi::before {
+            content: "\f00a";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased; }
+        .store-main--container_menu-options--list_single {
+          background-color: rgba(149, 152, 155, 0.1) !important;
+          color: #ff7e00 !important;
+          border-radius: 50% !important; }
+          .store-main--container_menu-options--list_single:hover {
+            color: #fff !important;
+            background: #ff7e00 !important;
+            background: radial-gradient(circle, #ff7e00 8%, #ff7e00 44%, rgba(255, 126, 0, 0) 44%, #ff7e00 66%, #ff7e00 77%, #ff7e00 95%) !important; }
+          .store-main--container_menu-options--list_single::before {
+            content: "\f0c9";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased; }
+      .store-main--container_menu-options--rating_box__container {
+        border-radius: 30px !important; }
+      .store-main--container_menu-options--sort_box__container {
+        border-radius: 30px !important; }
+        .store-main--container_menu-options--sort_box__container-select {
+          background-color: red !important; }
 
 /* This line can be removed it was just for display on CodePen: */
 .container {

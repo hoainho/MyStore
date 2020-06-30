@@ -42,7 +42,80 @@
 .active-W{
     width: 100% !important;
 }
-
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: $color-primary;
+    width: 7rem;
+    height: 40px;
+  }
+  .select-styled {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color-divider, .1);
+    padding: 8px 15px;
+    border-radius:30px;
+    &:after {
+      content:"";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-color: $color-primary transparent transparent transparent;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+    }
+    &:hover {
+      background-color: rgba($color-divider, .2);
+    }
+    &:active, &.active {
+      background-color: rgba($color-divider, .1);
+      &:after {
+        top: 9px;
+        border-color: transparent transparent $color-primary transparent;
+      }
+    }
+  }
+  
+  .select-options {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba($color-divider, .1);
+    border-radius: 10px;
+    li{
+        margin: 0;
+        padding: 5px 0;
+        text-indent: 13px;
+      &:hover {
+        color: $color-primary;
+        background: rgba($color-divider, .5);
+        border-radius: 30px;
+      }
+      &[rel="hide" ] {
+        display: none;
+      }
+      &[rel="hide" ] {
+        display: none;
+      }
+    }
+  }
 .tab-content > .tab-pane, .pill-content > .pill-pane {
 display: block; 
 height: 0; 
