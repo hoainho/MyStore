@@ -482,6 +482,61 @@
                     }
                 }
             }
+            &_content{
+                &__box{
+                    margin-bottom:1rem;
+                    border-bottom: 1px solid rgba($color-divider, .1);
+                    padding-bottom: 1rem;
+                    &-self{
+                        height: 40vh;
+                        &:nth-last-child(-n+6){
+                            border-right: 1px solid rgba($color-divider, .1);
+                        }
+                        &--content{
+                            height: 100%;
+                            &:hover &_button{
+                                bottom: 3rem;
+                            }
+                            &_pic{
+                                top: 2rem;
+                                position: relative;
+                            }
+                            &_details{
+                                left: 4rem;
+                                height: 6vh;
+                                position: absolute;
+                                top: 4rem;
+                                width: 3vw;
+                            }
+                            &_name{
+                                top: 2rem;
+                                position: relative;
+                            }  
+                            &_vote{
+                                top: 2rem;
+                                position: relative;
+                            } 
+                            &_price{
+                                top: 2rem;
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                &__old{
+                                    &::before{
+                                        top: 75% !important;
+                                    }
+                                }
+                            } 
+                            &_button{
+                                bottom: 2rem;
+                                padding: 0rem !important;
+                                background-color: $color-white;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
 }
