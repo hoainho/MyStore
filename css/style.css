@@ -3002,7 +3002,8 @@ html * {
     display: flex;
     position: relative;
     justify-content: space-around;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    border-radius: 10px; }
     .store-main--container_banner__pic-product {
       position: absolute;
       width: 100%;
