@@ -243,7 +243,7 @@
                                                 </ul>
                                             </li>
                                             <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
-                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false"> Tin Tức</a> 
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="news-tab" data-toggle="tab" href="/news.html" role="tab" aria-controls="news" aria-selected="false"> Tin Tức</a> 
                                             </li>
                                             <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
                                                 <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="guarantee-tab" data-toggle="tab" href="#guarantee" role="tab" aria-controls="guarantee" aria-selected="false"> Bảo Hành</a> 
@@ -286,33 +286,39 @@
                 </div>
                 <div class="news">
                     <div class="row news-container">
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 news-container--menu">
-                            <input type="search"
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 news-container--menu">
+                            <div class="news-container--menu_search">
+                                <input type="search"
                                     name="search-name" 
                                     id=""
                                     placeholder="Tim bai viet o day..."
-                                    class="news-container--menu_search"
-                             >
+                                    class="news-container--menu_search__box"
+                                >
+                                <button class="news-container--menu_search__icon"><i class="fab fa-searchengin news-container--menu_search__icon-details"></i></button>
+                            </div>
                              <div class="news-container--menu_categories">
                                 <h4 class="news-container--menu_categories__tittle">San pham</h4>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Tai Nghe</a>
-                                </li>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Ban Phim</a>
-                                </li>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Chuot</a>
-                                </li>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Phu kien PC</a>
-                                </li>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Tin cong nghe</a>
-                                </li>
-                                <li class="news-container--menu_categories__item">
-                                    <a href="#" class="news-container--menu_categories__link">Mot so tin khac</a>
-                                </li>
+                                <ul class="news-container--menu_categories__list">
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Tai Nghe</a>
+                                    </li>
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Ban Phim</a>
+                                    </li>
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Chuot</a>
+                                    </li>
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Phu kien PC</a>
+                                    </li>
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Tin cong nghe</a>
+                                    </li>
+                                    <li class="news-container--menu_categories__item">
+                                        <a href="#" class="news-container--menu_categories__link">Mot so tin khac</a>
+                                    </li>
+                                </ul>
+                                
                             </div>
                             <div class="news-container--menu_recent">
                                 <h4 class="news-container--menu_recent__tittle">Gan day</h4>
@@ -374,7 +380,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 news-container--list">
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 news-container--list">
                             
                         </div>
                     </div>
