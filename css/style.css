@@ -3262,3 +3262,75 @@ html * {
 
 [disabled].noUi-origin, [disabled] .noUi-handle {
   cursor: not-allowed; }
+
+.news {
+  width: 100%;
+  margin: 0 1rem; }
+  .news-container--menu_search {
+    width: 100%; }
+    .news-container--menu_search__box {
+      position: relative;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(149, 152, 155, 0.5);
+      border-radius: 30px;
+      color: #95989b;
+      outline: none; }
+      .news-container--menu_search__box:visited, .news-container--menu_search__box:active, .news-container--menu_search__box:focus {
+        outline: none;
+        border-color: #ff7e00;
+        box-shadow: #ff7e00 10px; }
+    .news-container--menu_search__icon {
+      position: absolute;
+      top: .5rem;
+      right: 2rem;
+      outline: none;
+      border: none;
+      background: transparent;
+      border-radius: 50%; }
+      .news-container--menu_search__icon:active, .news-container--menu_search__icon:visited,
+      .news-container--menu_search__icon:link .news-container--menu_search__icon:focus {
+        outline: none;
+        border: none;
+        background: transparent;
+        border-radius: 50%; }
+      .news-container--menu_search__icon-details {
+        outline: none;
+        border: none;
+        background: transparent; }
+        .news-container--menu_search__icon-details:active, .news-container--menu_search__icon-details:visited,
+        .news-container--menu_search__icon-details:link .news-container--menu_search__icon-details:target {
+          outline: none;
+          border: none;
+          background: transparent; }
+  .news-container--menu_categories {
+    position: relative;
+    margin: 1rem 0; }
+    .news-container--menu_categories__tittle {
+      position: relative;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: fantasy;
+      padding: 1rem 0;
+      border-bottom: 2px solid rgba(149, 152, 155, 0.5); }
+      .news-container--menu_categories__tittle::before {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 2px;
+        background-color: #ff7e00;
+        top: 3.2rem; }
+    .news-container--menu_categories__list {
+      list-style-type: none; }
+    .news-container--menu_categories__item {
+      margin: .5rem 0;
+      padding: .5rem 0;
+      border-bottom: 1px solid rgba(149, 152, 155, 0.2); }
+    .news-container--menu_categories__link {
+      text-decoration: none;
+      color: #95989b; }
+      .news-container--menu_categories__link:hover, .news-container--menu_categories__link:active {
+        color: #ff7e00;
+        position: relative;
+        left: 5%;
+        text-decoration: none; }
