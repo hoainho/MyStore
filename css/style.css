@@ -2748,7 +2748,7 @@ html * {
     color: #ffffff; }
 
 .store-tittle {
-  width: 100%;
+  width: 98%;
   position: relative;
   margin: 1rem; }
   .store-tittle--container {
@@ -2775,7 +2775,8 @@ html * {
       color: #ff7e00; }
 
 .store-main {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  width: 98%; }
   .store-main--control_list {
     position: relative;
     width: 100%;
@@ -3264,7 +3265,7 @@ html * {
   cursor: not-allowed; }
 
 .news {
-  width: 100%;
+  width: 98%;
   margin: 0 1rem; }
   .news-container--menu_search {
     width: 100%; }
@@ -3425,3 +3426,55 @@ html * {
       text-decoration: none;
       color: #ff7e00;
       left: 5%; }
+  .news-container--content_box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(149, 152, 155, 0.2); }
+    .news-container--content_box__pic {
+      position: relative;
+      width: 50%;
+      height: 20vh;
+      border: 1px solid rgba(149, 152, 155, 0.2); }
+    .news-container--content_box__tittle {
+      font-family: fantasy;
+      font-size: 1rem;
+      color: #242424;
+      margin-top: .5rem; }
+    .news-container--content_box__date-sub {
+      color: rgba(149, 152, 155, 0.5);
+      font-size: .8rem;
+      font-style: italic; }
+    .news-container--content_box__date-details {
+      color: rgba(149, 152, 155, 0.5);
+      font-size: .8rem;
+      font-style: italic; }
+    .news-container--content_box__introduce {
+      font-size: .8rem;
+      color: #242424; }
+  .news-container--content_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5rem; }
+    .news-container--content_link__button {
+      font-size: 1rem;
+      font-family: fantasy;
+      padding: .5rem 1rem;
+      background-image: url(../../img/bgbutton.png);
+      background-color: transparent;
+      background-size: contain;
+      border: none;
+      outline: none;
+      position: relative;
+      bottom: .5rem;
+      cursor: pointer; }
+      .news-container--content_link__button:active, .news-container--content_link__button:focus, .news-container--content_link__button:link, .news-container--content_link__button:visited {
+        border: none;
+        outline: none; }
+    .news-container--content_link__tag-sub {
+      text-decoration: none;
+      color: #ff7e00 !important;
+      font-style: italic; }
+      .news-container--content_link__tag-sub:hover {
+        color: #ff7e00; }
