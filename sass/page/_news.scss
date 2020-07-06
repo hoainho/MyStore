@@ -1,5 +1,5 @@
 .news{
-    width: 100%;
+    width: 98%;
     margin: 0 1rem;
     &-container{
         &--menu{
@@ -205,6 +205,80 @@
                         text-decoration: none;
                         color:$color-primary;
                         left: 5%;
+                    }
+                }
+            }
+        }
+        &--content{
+            &_news{
+
+            }
+            &_box{
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid rgba($color-divider,.2);
+                &__pic{
+                    position: relative;
+                    width: 50%;
+                    height: 20vh;
+                    border: 1px solid rgba($color-divider,.2);
+                }
+                &__tittle{
+                    font-family: fantasy;
+                    font-size: 1rem;
+                    color: $color-textdark;
+                    margin-top: .5rem;
+                }
+                &__date{
+                    
+                    &-sub{
+                        color:  rgba($color-divider,.5);
+                        font-size: .8rem;
+                        font-style: italic;
+                    }
+                    &-details{
+                        color:  rgba($color-divider,.5);
+                        font-size: .8rem;
+                        font-style: italic;
+                    }
+                }
+                &__introduce{
+                    font-size: .8rem;
+                    color: $color-textdark;
+                }
+            }
+            &_link{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top:.5rem ;
+                &__button{
+                    font-size: 1rem;
+                    font-family: fantasy;
+                    padding:.5rem 1rem;
+                    background-image: url(../../img/bgbutton.png);
+                    background-color: transparent;
+                    background-size: contain;  
+                    border: none;
+                    outline: none;
+                    position: relative;
+                    bottom: .5rem;
+                    cursor: pointer;
+                    &:active,&:focus,
+                    &:link,&:visited{
+                        border:none;
+                        outline: none; 
+                    }
+                }
+                &__tag{
+                    &-sub{
+                        text-decoration: none;
+                        color: $color-primary !important;
+                        font-style: italic;
+                        &:hover{
+                            color: $color-primary;
+                        }
                     }
                 }
             }
