@@ -3311,7 +3311,7 @@ html * {
       position: relative;
       font-weight: 600;
       font-size: 1rem;
-      font-family: fantasy;
+      font-family: sans-serif;
       padding: 1rem 0;
       border-bottom: 2px solid rgba(149, 152, 155, 0.5); }
       .news-container--menu_categories__tittle::before {
@@ -3342,7 +3342,7 @@ html * {
       position: relative;
       font-weight: 600;
       font-size: 1rem;
-      font-family: fantasy;
+      font-family: sans-serif;
       padding: 1rem 0;
       border-bottom: 2px solid rgba(149, 152, 155, 0.5); }
       .news-container--menu_recent__tittle::before {
@@ -3395,7 +3395,7 @@ html * {
     position: relative;
     font-weight: 600;
     font-size: 1rem;
-    font-family: fantasy;
+    font-family: sans-serif;
     padding: 1rem 0;
     border-bottom: 2px solid rgba(149, 152, 155, 0.5); }
     .news-container--menu_archive__tittle::before {
