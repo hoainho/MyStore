@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"/> 
+    <link rel="stylesheet" href="/jq/carousel/slick/slick.css">
+    <link rel="stylesheet" href="/jq/carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>TechStore</title>
+    <link rel="icon" href="img/cropped-favicon.png">
+</head>
+<body>
+    <div class="page-wrapper">
+         <!-- BANNER -->
+        <div class="banner"></div>
+         <!-- NAVBAR -->
+        <div class="navbar" id="navbar">
+            <div class="navbar-content">
+                <div class="navbar-content--top">
+                    <div class="navbar-content--top_features">
+                            <div class="row navbar-content--top_features__row">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 navbar-content--top_features__row___left">
+                                    <div class="navbar-content--top_features__row___left-content"> Chuyển phát nhanh và hoàn trả miễn phí trong vòng 30 ngày</div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 navbar-content--top_features__row___right">
+                                    <div class="navbar-content--top_features__row___right-content">
+                                        <div class="dropdown navbar-content--top_features__row___right-content--language" >
+                                            <div id="dropdownMenuButton" class="dropdown-toggle navbar-content--top_features__row___right-content--language_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ngôn ngữ</div>
+                                            <ul  class="dropdown-menu navbar-content--top_features__row___right-content--language_list" aria-labelledby="dropdownMenuButton">
+                                                <li class="dropdown-item navbar-content--top_features__row___right-content--language_link"> <a class="dropdown-item navbar-content--top_features__row___right-content--language_item" href="#"><strong>ENG</strong></a></li>
+                                                <li class="dropdown-item navbar-content--top_features__row___right-content--language_link"> <a class="dropdown-item navbar-content--top_features__row___right-content--language_item" href="#"><strong>VN</strong></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="navbar-content--top_features__row___right-content--info">
+                                            <ul class="navbar-content--top_features__row___right-content--info_list">
+                                                <li class="navbar-content--top_features__row___right-content--info_item">
+                                                    <a href="#" class="navbar-content--top_features__row___right-content--info_link">
+                                                        Tài khoản
+                                                    </a>
+                                                </li>
+                                                <li class="navbar-content--top_features__row___right-content--info_item">
+                                                    <a href="#" class="navbar-content--top_features__row___right-content--info_link">
+                                                        Danh sách yêu thích
+                                                    </a>
+                                                </li>
+                                                <li class="navbar-content--top_features__row___right-content--info_item">
+                                                    <a href="#" class="navbar-content--top_features__row___right-content--info_link">
+                                                        So Sánh
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-content--header">
+                        <div class="navbar-content--header_main">
+                            <div class="row navbar-content--header_main__features">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 row navbar-content--header_main__features___logo">
+                                    <div class="logo navbar-content--header_main__features___logo-box">
+                                        <span class="logo-letter navbar-content--header_main__features___logo-box--logo" data-letter="ℜ">ℜ</span>
+                                        <span class="navbar-content--header_main__features___logo-box--sublogo">Store</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 row navbar-content--header_main__features___control">
+                                    <div class="navbar-content--header_main__features___control-search">
+                                        <form action="" method="get" id="mini-search" class="navbar-content--header_main__features___control-search--box">
+                                                
+                                                <div class="navbar-content--header_main__features___control-search--box_select" id="select-box">
+                                                        <input type="checkbox" id="options-view-button">
+                                                        <div id="select-button" class="brd">
+                                                                <div id="selected-value">
+                                                                    <span>Tất Cả</span>
+                                                                </div>
+                                                                <div id="chevrons">
+                                                                        <i class="fas fa-chevron-up"></i>
+                                                                        <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div id="options" >
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="codepen">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="codepen">
+                                                                        <i class="fas fa-laptop-house option-icon"></i>
+                                                                        <span class="label">Tất Cả</span>
+                                                                        <span class="opt-val">Tất Cả</span>
+                                                                </div>
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="dribbble">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="dribbble">
+                                                                        <i class="fas fa-laptop option-icon"></i>
+                                                                        <span class="label">Acer</span>
+                                                                        <span class="opt-val">Acer</span>
+                                                                </div>
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="behance">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="behance">
+                                                                        <i class="fas fa-laptop-medical option-icon"></i>
+                                                                        <span class="label">Asus</span>
+                                                                        <span class="opt-val">Asus</span>
+                                                                </div>
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="hackerrank">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
+                                                                        <i class="fas fa-laptop-code option-icon"></i>
+                                                                        <span class="label">Dell</span>
+                                                                        <span class="opt-val">Dell</span>
+                                                                </div>
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="stackoverflow">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
+                                                                        <i class="fab fa-apple option-icon"></i>
+                                                                        <span class="label">Apple</span>
+                                                                        <span class="opt-val">Apple</span>
+                                                                </div>
+                                                                <div class="option">
+                                                                        <input class="s-c top" type="radio" name="platform" value="freecodecamp">
+                                                                        <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
+                                                                        <i class="fas fa-mouse option-icon"></i>
+                                                                        <span class="label">Logitech</span>
+                                                                        <span class="opt-val">Logitech</span>
+                                                                </div>
+                                                                <div id="option-bg"></div>
+                                                        </div>
+                                                </div>
+                                            <div class="navbar-content--header_main__features___control-search--box_input">
+                                                <input id="search" 
+                                                type="text" 
+                                                name="q" 
+                                                value="" 
+                                                placeholder="Tai nghe, bàn phím, chuột gaming, chuột văn phòng,..." 
+                                                class="input-text navbar-content--header_main__features___control-search--box_input__enter" 
+                                                maxlength="128" 
+                                                role="combobox" 
+                                                aria-haspopup="false" 
+                                                aria-autocomplete="both" 
+                                                aria-expanded="false" 
+                                                autocomplete="off">
+                                            </div>
+                                            <div class="navbar-content--header_main__features___control-search--box_button">
+                                                <button class="navbar-content--header_main__features___control-search--box_button__search">Tìm kiếm</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="navbar-content--header_main__features___control-cart">
+                                        <div class="navbar-content--header_main__features___control-cart--icon">
+                                            <i class="fas fa-cart-plus navbar-content--header_main__features___control-cart--icon_details"></i>
+                                            <span class="navbar-content--header_main__features___control-cart--icon_numbers">
+                                                0
+                                            </span>
+                                        </div>
+                                        <span class="navbar-content--header_main__features___control-cart--name">
+                                            <span class="navbar-content--header_main__features___control-cart--name_details">
+                                                Giỏ hàng:
+                                            </span>
+                                            <span class="navbar-content--header_main__features___control-cart--name_total">
+                                                0.000VND
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-content--menu">
+                        <div class="row navbar-content--menu__container">
+                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 navbar-content--menu_menutoggle">
+                                    <div class="navbar-content--menu_menutoggle__container">
+                                        <h4 id="btnmenutoggle" class="navbar-content--menu_menutoggle__container-button">Nổi Bật <i class="navbar-content--menu_menutoggle__container-button--icon far fa-list-alt"></i></h4>
+                                        
+                                        <input type="checkbox" class="navbar-content--menu_menutoggle__container-checkbox">
+
+                                        <ul id="menutoggle" class="navbar-content--menu_menutoggle__container___list">
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Top 10</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Sản phẩm bán chạy</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Điện Thoại</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Máy Tính</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Chuột</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Bàn Phím</a> </li>
+                                            <li class="navbar-content--menu_menutoggle__container___item"><a class="navbar-content--menu_menutoggle__container___link" href="#">Phụ Kiện Khác</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 navbar-content--menu_menuNavbar">
+                                    <div class="navbar-content--menu_menuNavbar__sticky ">
+                                        <ul class="navbar-content--menu_menuNavbar__sticky___list nav nav-tabs " id="myTab" role="tablist">
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link active" id="home-tab" data-toggle="tab" href="./index.html" role="tab" aria-controls="home" aria-selected="true"> Trang Chủ</a>
+                                            </li>
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="store-tab" data-toggle="tab" href="./store.html" role="tab" aria-controls="store" aria-selected="false"> Cửa Hàng</a> 
+                                            </li>
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item navbar-content--menu_menuNavbar__sticky___itemFeatures nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="false"> Chức Năng</a> 
+                                                <ul class="navbar-content--menu_menuNavbar__sticky___item-features">
+                                                    <li class="navbar-content--menu_menuNavbar__sticky___item-features--item"><a class="navbar-content--menu_menuNavbar__sticky___item-features--link" href="#">Loại</a>
+                                                        <ul class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype">
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-item">
+                                                                <a href="" class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link">
+                                                                    Sản Phẩm Cấu Hình
+                                                                </a>
+                                                            </li>
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-item">
+                                                                <a href="" class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link">
+                                                                    Sản Phẩm Combo
+                                                                </a>
+                                                            </li>
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-item">
+                                                                <a href="" class="navbar-content--menu_menuNavbar__sticky___item-features--item_producttype-link">
+                                                                    Phần mềm
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="navbar-content--menu_menuNavbar__sticky___item-features--item"><a class="navbar-content--menu_menuNavbar__sticky___item-features--link" href="#">Sắp Xếp</a>
+                                                        <ul class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct">
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-item">
+                                                                <a class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link" href="#"> Đánh giá </a>
+                                                            </li>
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-item">
+                                                                <a class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link" href="#"> Lượt mua </a>
+                                                            </li>
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-item">
+                                                                <a class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link" href="#"> Giảm giá </a>
+                                                            </li>
+                                                            <li class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-item">
+                                                                <a class="navbar-content--menu_menuNavbar__sticky___item-features--item_sortproduct-link" href="#"> Miễn Phí giao hàng </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="navbar-content--menu_menuNavbar__sticky___item-features--item"><a class="navbar-content--menu_menuNavbar__sticky___item-features--link" href="#">Thương Hiệu </a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="news-tab" data-toggle="tab" href="./news.html" role="tab" aria-controls="news" aria-selected="false"> Tin Tức</a> 
+                                            </li>
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="guarantee-tab" data-toggle="tab" href="#guarantee" role="tab" aria-controls="guarantee" aria-selected="false"> Bảo Hành</a> 
+                                            </li>
+                                            <li class="navbar-content--menu_menuNavbar__sticky___item nav-item">
+                                                <a class="navbar-content--menu_menuNavbar__sticky___link nav-link"        id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"> Liên Hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 navbar-content--menu_contact">
+                                   <div class="navbar-content--menu_contact__container">
+                                       <span class="navbar-content--menu_contact__container-icon"><i class="fas fa-phone-volume"></i></span>
+                                       <span class="navbar-content--menu_contact__container-content">(+84) 912 521 560 - (+84) 9 0115 0222</span>
+                                   </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        </div>
+
+        </div>
+        <!-- **********NEWS********** -->
+                <!-- TITTLE -->
+                <div class="store-tittle news-tittle">
+                    <div class="store-tittle--container">
+                        <a href="#home" class="store-tittle--container_home">Trang chủ</a>
+                        <span class="store-tittle--container_iconpresent special">
+                            > 
+                        </span>
+                        <span class="store-tittle--container_present special">
+                             Thông tin
+                        </span>
+                    </div>
+                </div>
+
+                <!-- TRADEMARK  -->
+                <div class="trademark">
+                    <div class="trademark-container">
+                        <div class="trademark-container--slider ">
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AcerLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AcerLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AsusLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AsusLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AppleLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AppleLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/LenovoLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/LenovoLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/DellLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/DellLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/MSLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/MSLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/SonyLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/SonyLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AcerLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AcerLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AsusLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AsusLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AppleLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AppleLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/LenovoLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/LenovoLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/DellLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/DellLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/MSLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/MSLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/SonyLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/SonyLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AcerLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AcerLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AsusLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AsusLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/AppleLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/AppleLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/LenovoLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/LenovoLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/DellLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/DellLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/MSLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/MSLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            <div class="trademark-container--slider_box">
+                                <div class="trademark-container--slider_box__icon">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-A" src="img/SonyLogo1A.png" alt="local">
+                                    <img class="trademark-container--slider_box__icon-All trademark-container--slider_box__icon-B" src="img/SonyLogo1B.png" alt="local">
+                                </div> 
+                            </div>
+                            
+                            
+
+                        
+                        </div>
+                </div>
+
+            
+                
+                
+                
+                </div>
+                <!-- PRODUCT-DETAILS  -->
+                <div class="wrapper">
+                    <div class="slim_modal" id="examplePlain">
+                    <div class="sm_content">
+                        <div class="sm_content_inner_wrap">
+                        <div class=""><!-- class=sm_area_top (padding=4rem)-->
+                            <h3>    
+                                <img src="./img/HeadphoneAcer1A.png" alt="Headphone" class="sm_pic">
+                            </h3>
+                        </div>
+                        <div class="sm_area_bottom">
+                            
+                        </div>
+                        <a class="sm_close sm_close_button"></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slim_modal" id="exampleAdvanced">
+                    <div class="sm_content">
+                        <div class="sm_header">Chi tiết sản phẩm</div>
+                        <div class="sm_icon_menu">
+                        <ul>
+                            <li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+                            <li class="sm-icon--item"><i class="sm-icon--link far fa-user"></i></li>
+                            <li class="sm-icon--item"><i class="sm-icon--link fas fa-heartbeat"></i></li>
+                            <li class="sm-icon--item"><i class="sm-icon--link fas fa-not-equal"></i></li>
+                            <li class="sm-icon--item"><i class="sm-icon--link far fa-share-square"></i></li>
+                        </ul>
+                        </div>
+                        
+                        
+                        <div class="sm_content_inner_wrap row">
+                        <div class="sm_box col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="sm_box_pic"><!-- class=sm_area_top (padding=4rem)-->
+                                    <img src="./img/HeadphoneAcer1A.png" alt="Headphone" class="sm_box_pic_details"/>
+                            </div>
+                            <div class="sm_box_list">
+                                    <div class="sm_box_item">
+                                        <img src="/img/HeadphoneAsus1A.png" alt="HeadphoneAfter" class="sm_box_link">
+                                    </div>
+                                    <div class="sm_box_item">
+                                        <img src="/img/HeadphoneAsus3.png" alt="HeadphoneAfter" class="sm_box_link">
+                                    </div>  
+                                    <div class="sm_box_item">
+                                        <img src="/img/HeadphoneAsus5.png" alt="HeadphoneAfter" class="sm_box_link">
+                                    </div>
+                                    <div class="sm_box_item">
+                                        <img src="/img/HeadphoneAsus4B.png" alt="HeadphoneAfter" class="sm_box_link">
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="sm_area_bottom col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="sm-right">
+                                <div class="sm-right--content">
+                                    <h1 class="sm-right--content_name">
+                                        Comming Soon
+                                    </h1>
+                                    <ul class="sm-right--content_list">
+                                        <li class="sm-right--content_item">
+                                            <p class="sm-right--content_introduce">Hiệu năng cao</p>
+                                        </li>
+                                        <li class="sm-right--content_item">
+                                            <p class="sm-right--content_introduce">Giá thành thấp</p>
+                                        </li>
+                                        <li class="sm-right--content_item">
+                                            <p class="sm-right--content_introduce">Chip thế hệ mới</p>
+                                        </li>
+                                        <li class="sm-right--content_item">
+                                            <p class="sm-right--content_introduce">Bảo hành 1 năm</p>
+                                        </li>
+                                    </ul>
+                                    <div class="sm-right--content_ability">
+                                        <span class="sm-right--content_ability__status">Tình Trạng : <strong class="special">Còn Hàng</strong></span>
+                                        <span class="sm-right--content_ability__code">Mã sản phẩm : <strong class="special">TN001</strong></span>
+                                    </div>
+                                    <div class="sm-right--rating">
+                                        <div class="sm-right--rating_result">
+                                            <span class="product-tab--container_content__category___product-vote sm-right--rating_result__summary">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            <span class="sm-right--rating_review">68 Reviews</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <span class="product-tab--container_content__category___product-price sm-right--price">
+                                        <span class="product-tab--container_content__category___product-price--present sm-right--price_present">1.800.000vnd</span>
+                                        <span class="product-tab--container_content__category___product-price--old sm-right--price_old">2.000.000vnd</span>
+                                    </span>
+                                </div>
+                                <div class="sm-right--control">
+                                    <div class="sm-right--control_box">
+                                        <span class="sm-right--control_reduction">
+                                            <i class="fa fa-minus"></i>
+                                        </span>
+                                        <span class="sm-right--control_number">
+                                            1
+                                        </span>
+                                        <span class="sm-right--control_increase">
+                                            <i class="fa fa-plus"></i>
+                                        </span>
+                                    </div>
+                                    <button class="product-tab--container_content__category___product-button--card sm-right--control_add">Thêm Sản Phẩm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="sm_close sm_close_button">Đóng</div> -->
+                        </div>
+                    </div>
+                    </div>
+                
+                    <div class="slim_modal" id="exampleData">
+                    <div class="sm_content">
+                        <div class="sm_header"></div>
+                        <div class="sm_icon_menu is_right">
+                        <ul>
+                            <li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+                        </ul>
+                        </div>
+                        <div class="sm_content_inner_wrap">
+                        <div class="sm_area_all"></div>
+                        <a class="sm_close sm_close_button">Đóng</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    <!-- FOOTER  -->
+                <div class="footer-overlay">
+                    <svg viewBox="0 0 120 28">
+                    <defs> 
+                        <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="
+                            1 0 0 0 0  
+                            0 1 0 0 0  
+                            0 0 1 0 0  
+                            0 0 0 13 -9" result="goo" />
+                        </filter>
+                        <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                    </defs> 
+                    
+                    <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+                    <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+                    
+                    
+                    <g class="gooeff" filter="url(#goo)">
+                    <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
+                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
+                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
+                    <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
+                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
+                    <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
+                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
+                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
+                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
+                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
+                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
+                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
+                    
+                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
+                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
+                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
+                        <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
+                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
+                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
+                    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+                    </g>  
+                        <!-- g mask="url(#xxx)">
+                        <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                        </g>
+                    </g -->
+                    
+                    </svg>
+                    <div class="footer">
+                        <div class="row footer-container">
+                            
+                            
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-left">
+                                <div class="footer-left--logo">
+                                    <div class="logo navbar-content--header_main__features___logo-box footer-left--logo_box">
+                                        <span class="logo-letter navbar-content--header_main__features___logo-box--logo footer-left--logo_box__icon" data-letter="ℜ">ℜ</span>
+                                        <span class="navbar-content--header_main__features___logo-box--sublogo footer-left--logo_box__name">Store</span>
+                                    </div>
+                                </div>
+                                <div class="footer-left--rock">
+                                    <img class="footer-left--rock_pic" src="img/footer-rock.png" alt="rock">
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 footer-center">
+                                <div class="footer-center--content">
+                                    <div class="footer-center--content-rowfirst">
+                                        <div class="footer-center--content-box">
+                                            <h4 class="footer-center--content_tittle">Phương thức thanh toán</h4>
+                                            <ul class="footer-center--content_list">
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Visa</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Ship Cod</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Ví momo</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Chuyển khoản</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-center--content-box">
+                                            <h4 class="footer-center--content_tittle">Chính sách bảo hành</h4>
+                                            <ul class="footer-center--content_list">
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Hoàn tiền trong 30 ngày</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Bảo hành R-Vip</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Bảo hành phần mềm 1 năm</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Chính sách 1 đổi 1</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer-center--content-rowsecond">
+                                        <div class="footer-center--content-box">
+                                            <h4 class="footer-center--content_tittle">Vì sao chọn chúng tôi</h4>
+                                            <ul class="footer-center--content_list">
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">An toàn</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Tiện lợi</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Chất lượng cao</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Giá rẻrẻ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-center--content-box">
+                                            <h4 class="footer-center--content_tittle">Thông tin R-Store</h4>
+                                            <ul class="footer-center--content_list">
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Giấy phép kinh doanh</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Feedback</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Nguồn gốc sản phẩm</a>
+                                                </li>
+                                                <li class="footer-center--content_item">
+                                                    <a href="#" class="footer-center--content_link">Thành viên</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer-right">
+                                <div class="footer-right--contact">
+                                    <h4 class="footer-right--contact_tittle">
+                                        Đăng nhập & Theo dõi
+                                    </h4>
+                                    <span class="footer-right--contact_sub">
+                                        100+ mã khuyến mãi mỗi tuần khi bạn theo dõi R-Store <br>
+                                        Nhập email bạn muốn nhận mã (1 email/1 mã)
+                                    </span>
+                                    <form class="footer-right--contact_follow" action="" method="post">
+                                        <input class="footer-right--contact_follow__input"
+                                        type="email" 
+                                        maxlength="128" 
+                                        placeholder="Nhập email của bạn..."
+                                        name="email"  
+                                        pattern="\S+.*">
+                            
+                                        <button class="footer-right--contact_follow__button" type="submit">Theo dõi</button>
+                                    </form>
+                                    <div class="footer-right--contact_hotline">
+                                        <span class="footer-right--contact_hotline__icon"><img src="img/icon-call.png" alt="icon" class="footer-right--contact_hotline__icon___details"></span>
+                                        <span class="footer-right--contact_hotline__name">(+84) 912 521 560</span>
+                                        <span class="footer-right--contact_hotline__address"><br>
+                                            Địa chỉ : N3, Điện Biên Phủ, P.25, Q.Bình Thạnh <br>
+                                            Email: remalw2019@gmail.com <br>
+                                            Thông tin:  <a href="https://hoainho.github.io/Rem-Cv/" class="high-light"> Rem-Cv </a> 
+                                        </span>
+                                    </div>
+                                    <div class="footer-right--contact_payment">
+                                        <span class="footer-right--contact_payment__box"><img class="footer-right--contact_payment__box___icon" src="img/visa.png" alt="payonline"></span>
+                                        <span class="footer-right--contact_payment__box"><img class="footer-right--contact_payment__box___icon" src="img/MTcard.png" alt="payonline"></span>
+                                        <span class="footer-right--contact_payment__box"><img class="footer-right--contact_payment__box___icon" src="img/momo.png" alt="payonline"></span>
+                                        <span class="footer-right--contact_payment__box"><img class="footer-right--contact_payment__box___icon" src="img/airpay.png" alt="payonline"></span>
+                                    </div>
+                                    <span class="footer-right--contact_copyright">Copyright © <a class="high-light" href="#"> R-Store </a>All Rights Reserved. <a class="high-light"  href="#"> Remalw</a> </span>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                                
+                                
+                        </div>
+                    </div>
+                </div>
+                <div id="stop" class="scrollTop">
+                    <span class="scrollTop-box"><a class="scrollTop-box--link" href="">Top</a></span>
+                </div>
+         
+
+
+    </div>
+
+
+    
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
+    <script src="/jq/carousel/slick/slick.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+    <script src="https://kit.fontawesome.com/cac56666a2.js"></script>
+    
+    <script src="js/aos.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
