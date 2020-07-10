@@ -4,6 +4,7 @@
         &--pic{
             position: relative;
             border: 1px solid rgba($color-divider, .1);
+            border-radius: 3px;
             height: 85vh;
             &_details{
                 position: relative;
@@ -14,11 +15,13 @@
         }
         &--content{
             &_tittle{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: serif;
                 font-size: 2rem;
                 border-bottom: 2px solid rgba($color-divider, .1);
                 margin-bottom: 2rem;
-                text-transform: uppercase;
+                text-transform: capitalize;
+                font-weight: 900;
+                color: $color-divider;
                 &::before{
                     content: '';
                     position: absolute;
@@ -31,6 +34,72 @@
             &_details{
                 font-size: 1rem;
                 color: $color-divider;
+            }
+        }
+    }
+    &-service{
+        &--content{
+             display:flex;
+             flex-direction: column;
+             justify-items: center;
+             justify-content: center;
+             text-align: center;
+             margin: 2rem 0;
+            &_tittle{
+                font-size: 2rem;
+                font-family: serif;
+                font-weight: 900;
+                text-transform: capitalize;
+                margin: 5rem 0rem;
+                position: relative;
+                width: 100%;
+                color: $color-divider;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    width: 4%;
+                    background-color: $color-primary;
+                    top: 3rem;
+                    left: 48%;  
+                }
+            }   
+            &_details{
+                position: relative;
+                text-align: center;
+                width: 40%;
+                left: 30%;
+                color: rgba($color-divider, .5);
+            }
+        }
+        &--container{
+            margin: 0 1rem;
+            &_box{
+                
+                &__main{
+                    border: 1px solid rgba($color-divider, .2);
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    justify-items: center;
+                
+                }
+                &__ordinal{
+                    font-size: 1.5rem;
+                    font-family: serif;
+                }
+                &__slogan{
+                    font-size: 1.5rem;
+                    font-family: serif;
+                    font-weight: 800; 
+                    letter-spacing: .15rem;
+                    margin-bottom:1rem ;
+                }
+                &__content{
+                    color: $color-divider;
+                    font-size: .8rem;
+                }
             }
         }
     }
