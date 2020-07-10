@@ -3498,3 +3498,31 @@ html * {
     .scrollTop-box--link:hover, .scrollTop-box--link:link, .scrollTop-box--link:active, .scrollTop-box--link:focus {
       text-decoration: none;
       color: #fff; }
+
+.about-story {
+  margin: 2rem 15rem; }
+  .about-story--pic {
+    position: relative;
+    border: 1px solid rgba(149, 152, 155, 0.1);
+    height: 85vh; }
+    .about-story--pic_details {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: .5rem; }
+  .about-story--content_tittle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    border-bottom: 2px solid rgba(149, 152, 155, 0.1);
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+    .about-story--content_tittle::before {
+      content: '';
+      position: absolute;
+      border-bottom: 2px solid #ff7e00;
+      height: 2px;
+      width: 23%;
+      top: 2.4rem; }
+  .about-story--content_details {
+    font-size: 1rem;
+    color: #95989b; }
