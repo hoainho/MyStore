@@ -3514,24 +3514,26 @@ html * {
     height: 85vh; }
     .about-story--pic_details {
       position: relative;
-      width: 100%;
-      height: 100%;
-      top: .5rem; }
+      width: 215%;
+      height: 114%;
+      top: -5rem;
+      right: 17rem; }
   .about-story--content_tittle {
+    position: relative;
     font-family: serif;
     font-size: 2rem;
-    border-bottom: 2px solid rgba(149, 152, 155, 0.1);
     margin-bottom: 2rem;
     text-transform: capitalize;
     font-weight: 900;
-    color: #95989b; }
+    color: #242424; }
     .about-story--content_tittle::before {
       content: '';
       position: absolute;
-      border-bottom: 2px solid #ff7e00;
+      background: #ff7e00;
       height: 2px;
-      width: 23%;
-      top: 2.4rem; }
+      width: 10%;
+      top: 3rem;
+      left: 6%; }
   .about-story--content_details {
     font-size: 1rem;
     color: #95989b; }
@@ -3551,7 +3553,7 @@ html * {
     margin: 5rem 0rem;
     position: relative;
     width: 100%;
-    color: #95989b; }
+    color: #242424; }
     .about-service--content_tittle::before {
       content: '';
       position: absolute;
@@ -3625,7 +3627,7 @@ html * {
       position: relative;
       color: #242424;
       font-family: serif;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       text-align: center;
       margin: 2rem 0; }
