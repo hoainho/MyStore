@@ -35,6 +35,12 @@
   font-size: 1.1rem;
   color: #ff7e00; }
 
+.big-size {
+  font-size: 5rem;
+  font-family: fantasy;
+  font-weight: 900;
+  color: #ff7e00; }
+
 .w-100 {
   width: 40% !important;
   position: absolute;
@@ -3582,3 +3588,31 @@ html * {
   .about-service--container_box__content {
     color: #95989b;
     font-size: .8rem; }
+
+.about-slogan {
+  margin: 10rem 1rem 1rem;
+  border-bottom: 1px solid rgba(149, 152, 155, 0.1); }
+  .about-slogan--container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 100%; }
+    .about-slogan--container_symbos {
+      font-size: 7rem;
+      font-family: fantasy;
+      font-weight: 900;
+      color: #ff7e00;
+      position: relative;
+      text-align: center; }
+    .about-slogan--container_content {
+      text-align: center;
+      position: relative;
+      width: 50%;
+      left: 25%;
+      bottom: 5rem;
+      color: #242424;
+      font-family: serif;
+      font-size: 1rem;
+      font-weight: bold; }
