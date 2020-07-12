@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: serif !important; }
+
 .active-tab {
   display: block !important; }
 
@@ -944,8 +947,8 @@ input[type="radio"] {
   height: 83vh;
   position: relative;
   background-image: url(../../img/bgproducttab.png);
-  background-size: 95rem;
-  background-repeat: no-repeat; }
+  background-size: contain;
+  background-repeat: repeat-x; }
   .slider-content {
     margin: 0 10rem; }
     .slider-content--tv {
@@ -1732,10 +1735,14 @@ button.slick-next.slick-arrow {
             left: .5rem; }
 
 .trademark {
+  margin-top: 5rem;
   width: 100%;
   height: 30%;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center; }
   .trademark-container {
+    width: 50%;
     margin: 0 3rem;
     padding: 1rem 0; }
     .trademark-container--slider {
@@ -1749,22 +1756,14 @@ button.slick-next.slick-arrow {
         .trademark-container--slider_box__icon {
           width: 100%; }
           .trademark-container--slider_box__icon:hover .trademark-container--slider_box__icon-A {
-            display: none !important;
-            opacity: 0; }
-          .trademark-container--slider_box__icon:hover .trademark-container--slider_box__icon-B {
-            display: block !important;
             opacity: 1; }
           .trademark-container--slider_box__icon-All {
             position: relative;
             width: 100%;
             height: 10vh;
-            transition: all ease-in-out 1s !important; }
+            transition: all ease-in-out .1s !important; }
           .trademark-container--slider_box__icon-A {
-            opacity: 1;
-            display: block; }
-          .trademark-container--slider_box__icon-B {
-            opacity: 0;
-            display: none !important; }
+            opacity: .1; }
         .trademark-container--slider_box__name {
           width: 50%;
           color: #95989b;
@@ -3111,44 +3110,48 @@ html * {
         border-radius: 30px !important; }
         .store-main--container_menu-options--sort_box__container-select {
           background-color: red !important; }
-  .store-main--container_content__box {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(149, 152, 155, 0.1);
-    padding-bottom: 1rem; }
-    .store-main--container_content__box-self {
-      height: 40vh; }
-      .store-main--container_content__box-self:nth-last-child(-n+6) {
-        border-right: 1px solid rgba(149, 152, 155, 0.1); }
-      .store-main--container_content__box-self--content {
-        height: 100%; }
-        .store-main--container_content__box-self--content:hover .store-main--container_content__box-self--content_button {
-          bottom: 3rem; }
-        .store-main--container_content__box-self--content_pic {
-          top: 2rem;
-          position: relative; }
-        .store-main--container_content__box-self--content_details {
-          left: 4rem;
-          height: 6vh;
-          position: absolute;
-          top: 4rem;
-          width: 3vw; }
-        .store-main--container_content__box-self--content_name {
-          top: 2rem;
-          position: relative; }
-        .store-main--container_content__box-self--content_vote {
-          top: 2rem;
-          position: relative; }
-        .store-main--container_content__box-self--content_price {
-          top: 2rem;
-          position: relative;
-          display: flex;
-          flex-direction: column; }
-          .store-main--container_content__box-self--content_price__old::before {
-            top: 75% !important; }
-        .store-main--container_content__box-self--content_button {
-          bottom: 2rem;
-          padding: 0rem !important;
-          background-color: #fff; }
+  .store-main--container_content {
+    background-image: url(../../img/backgroundtech2.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .store-main--container_content__box {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(149, 152, 155, 0.1);
+      padding-bottom: 1rem; }
+      .store-main--container_content__box-self {
+        height: 40vh; }
+        .store-main--container_content__box-self:nth-last-child(-n+6) {
+          border-right: 1px solid rgba(149, 152, 155, 0.1); }
+        .store-main--container_content__box-self--content {
+          height: 100%; }
+          .store-main--container_content__box-self--content:hover .store-main--container_content__box-self--content_button {
+            bottom: 3rem; }
+          .store-main--container_content__box-self--content_pic {
+            top: 2rem;
+            position: relative; }
+          .store-main--container_content__box-self--content_details {
+            left: 4rem;
+            height: 6vh;
+            position: absolute;
+            top: 4rem;
+            width: 3vw; }
+          .store-main--container_content__box-self--content_name {
+            top: 2rem;
+            position: relative; }
+          .store-main--container_content__box-self--content_vote {
+            top: 2rem;
+            position: relative; }
+          .store-main--container_content__box-self--content_price {
+            top: 2rem;
+            position: relative;
+            display: flex;
+            flex-direction: column; }
+            .store-main--container_content__box-self--content_price__old::before {
+              top: 75% !important; }
+          .store-main--container_content__box-self--content_button {
+            bottom: 2rem;
+            padding: 0rem !important;
+            background-color: #fff; }
 
 /* This line can be removed it was just for display on CodePen: */
 .container {
@@ -3515,6 +3518,10 @@ html * {
       color: #fff; }
 
 .about-story {
+  background-image: url(../../img/backgroundtech3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-X: -10rem;
   margin: 2rem 15rem; }
   .about-story--pic {
     position: relative;
@@ -3545,7 +3552,10 @@ html * {
       left: 6%; }
   .about-story--content_details {
     font-size: 1rem;
-    color: #95989b; }
+    color: #95989b;
+    background-image: url(../../img/backgroundtech2.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 .about-service--content {
   display: flex;
@@ -3688,57 +3698,62 @@ html * {
 
 .contact {
   margin: 0 25rem; }
-  .contact-container--tittle_details {
-    position: relative;
-    font-family: serif;
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center; }
-    .contact-container--tittle_details::before {
-      content: '';
-      position: absolute;
-      height: 3px;
-      width: 10%;
-      background-color: #ff7e00;
-      top: 3rem;
-      left: 45%; }
-  .contact-container--tittle_slogan {
-    font-size: .8rem;
-    font-weight: 900;
-    font-style: oblique;
-    font-family: serif;
-    color: rgba(149, 152, 155, 0.5);
-    text-align: center; }
-  .contact-container--input_tittle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #242424; }
-  .contact-container--input_place:focus {
-    border-color: #ff7e00;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
-  .contact-container--submit {
-    position: relative;
-    width: 100%; }
-    .contact-container--submit_box {
+  .contact-container {
+    background-image: url(../../img/backgroundtech1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 11rem 6rem; }
+    .contact-container--tittle_details {
       position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center; }
-      .contact-container--submit_box__details {
-        background: #ff7e00;
-        color: #fff;
-        font-size: 1rem;
-        font-weight: 900;
-        font-style: oblique;
-        font-family: serif;
-        outline: none;
-        border-color: rgba(255, 126, 0, 0.25); }
-        .contact-container--submit_box__details:focus {
+      font-family: serif;
+      font-size: 2rem;
+      font-weight: 900;
+      text-align: center; }
+      .contact-container--tittle_details::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 10%;
+        background-color: #ff7e00;
+        top: 3rem;
+        left: 45%; }
+    .contact-container--tittle_slogan {
+      font-size: .8rem;
+      font-weight: 900;
+      font-style: oblique;
+      font-family: serif;
+      color: rgba(149, 152, 155, 0.5);
+      text-align: center; }
+    .contact-container--input_tittle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #242424; }
+    .contact-container--input_place:focus {
+      border-color: #ff7e00;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
+    .contact-container--submit {
+      position: relative;
+      width: 100%; }
+      .contact-container--submit_box {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .contact-container--submit_box__details {
           background: #ff7e00;
           color: #fff;
-          border: rgba(255, 126, 0, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
-        .contact-container--submit_box__details:active, .contact-container--submit_box__details:visited, .contact-container--submit_box__details:hover {
-          color: #ff7e00 !important;
-          background: #232f3e !important; }
+          font-size: 1rem;
+          font-weight: 900;
+          font-style: oblique;
+          font-family: serif;
+          outline: none;
+          border-color: rgba(255, 126, 0, 0.25); }
+          .contact-container--submit_box__details:focus {
+            background: #ff7e00;
+            color: #fff;
+            border: rgba(255, 126, 0, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
+          .contact-container--submit_box__details:active, .contact-container--submit_box__details:visited, .contact-container--submit_box__details:hover {
+            color: #ff7e00 !important;
+            background: #232f3e !important; }

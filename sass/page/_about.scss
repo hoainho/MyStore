@@ -1,5 +1,9 @@
 .about{
     &-story{
+        background-image: url(../../img/backgroundtech3.png);
+    background-size: contain;
+    background-repeat:no-repeat; 
+    background-position-X: -10rem;
         margin: 2rem 15rem;
         &--pic{
             position: relative;
@@ -15,6 +19,7 @@
             }
         }
         &--content{
+            
             &_tittle{
                 position: relative;
                 font-family: serif;
@@ -23,6 +28,7 @@
                 text-transform: capitalize;
                 font-weight: 900;
                 color: $color-textdark;
+
                 &::before{
                     content: '';
                     position: absolute;
@@ -36,6 +42,9 @@
             &_details{
                 font-size: 1rem;
                 color: $color-divider;
+                background-image: url(../../img/backgroundtech2.png);
+                background-size: contain;
+                background-repeat:no-repeat;
             }
         }
     }
