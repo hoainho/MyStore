@@ -1,8 +1,13 @@
 .trademark{
+    margin-top: 5rem;
     width: 100%;
     height: 30%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    
     &-container{
+        width: 50%;
         margin: 0 3rem;
         padding:  1rem 0;
         &--slider{
@@ -17,26 +22,16 @@
                 &__icon{
                     width: 100%;
                     &:hover &-A{
-                        display: none !important;
-                        opacity: 0;
-                    }
-                    &:hover &-B{
-                        display: block !important;
                         opacity: 1;
                     }
                     &-All{
                         position: relative;
                         width: 100%;
                         height: 10vh;
-                        transition:all ease-in-out 1s !important;
+                        transition:all ease-in-out .1s !important;
                     }
                     &-A{
-                        opacity: 1;
-                        display: block;
-                    }
-                    &-B{
-                        opacity: 0;
-                        display: none !important;
+                        opacity: .1;
                     }
                     
                 }

@@ -417,6 +417,7 @@
                     place-content: space-between;
                     &--list{
                         height: 100%;
+                        
                         &_item
                         {
 
@@ -485,6 +486,9 @@
                 }
             }
             &_content{
+                background-image: url(../../img/backgroundtech2.png);
+                        background-size: cover;
+                        background-repeat:no-repeat; 
                 &__box{
                     margin-bottom:1rem;
                     border-bottom: 1px solid rgba($color-divider, .1);
