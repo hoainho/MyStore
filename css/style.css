@@ -3151,7 +3151,7 @@ html * {
           .store-main--container_content__box-self--content_button {
             bottom: 2rem;
             padding: 0rem !important;
-            background-color: #fff; }
+            background-color: transparent; }
 
 /* This line can be removed it was just for display on CodePen: */
 .container {
