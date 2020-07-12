@@ -35,6 +35,15 @@
   font-size: 1.1rem;
   color: #ff7e00; }
 
+.input-special {
+  position: relative;
+  top: 2px;
+  color: #ff7e00;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: serif;
+  margin-left: .2rem; }
+
 .big-size {
   font-size: 5rem;
   font-family: fantasy;
@@ -3676,3 +3685,60 @@ html * {
         font-size: .8rem;
         text-align: center;
         font-style: italic; }
+
+.contact {
+  margin: 0 25rem; }
+  .contact-container--tittle_details {
+    position: relative;
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center; }
+    .contact-container--tittle_details::before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 10%;
+      background-color: #ff7e00;
+      top: 3rem;
+      left: 45%; }
+  .contact-container--tittle_slogan {
+    font-size: .8rem;
+    font-weight: 900;
+    font-style: oblique;
+    font-family: serif;
+    color: rgba(149, 152, 155, 0.5);
+    text-align: center; }
+  .contact-container--input_tittle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #242424; }
+  .contact-container--input_place:focus {
+    border-color: #ff7e00;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
+  .contact-container--submit {
+    position: relative;
+    width: 100%; }
+    .contact-container--submit_box {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .contact-container--submit_box__details {
+        background: #ff7e00;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 900;
+        font-style: oblique;
+        font-family: serif;
+        outline: none;
+        border-color: rgba(255, 126, 0, 0.25); }
+        .contact-container--submit_box__details:focus {
+          background: #ff7e00;
+          color: #fff;
+          border: rgba(255, 126, 0, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(255, 126, 0, 0.25); }
+        .contact-container--submit_box__details:active, .contact-container--submit_box__details:visited, .contact-container--submit_box__details:hover {
+          color: #ff7e00 !important;
+          background: #232f3e !important; }
