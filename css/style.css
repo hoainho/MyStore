@@ -3158,6 +3158,7 @@ html * {
     .store-main--container_content__single {
       position: relative;
       width: 100%;
+      padding-bottom: 2rem;
       border-bottom: 1px solid rgba(149, 152, 155, 0.1); }
       .store-main--container_content__single:hover .store-main--container_content__single-pic--details_B {
         display: block; }
@@ -3238,6 +3239,14 @@ html * {
           font-size: 1rem;
           font-weight: 900;
           font-family: serif; }
+      .store-main--container_content__single-content--control {
+        display: flex;
+        flex-direction: row; }
+        .store-main--container_content__single-content--control_button {
+          width: 18%;
+          left: 0;
+          top: .4rem;
+          height: 5vh; }
   .store-main--container_storage {
     position: relative;
     height: auto; }

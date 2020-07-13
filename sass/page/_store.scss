@@ -539,6 +539,7 @@
                 &__single{
                     position: relative;
                     width: 100%;
+                    padding-bottom: 2rem;
                     border-bottom: 1px solid rgba($color-divider, .1);
                     &:hover &-pic--details_B{
                             display: block;
@@ -641,6 +642,16 @@
                                 font-size: 1rem;
                                 font-weight:900 ;
                                 font-family: serif;
+                            }
+                        }
+                        &--control{
+                            display: flex;
+                            flex-direction: row;
+                            &_button{
+                                width: 18%;
+                                left: 0;
+                                top: .4rem;
+                                height: 5vh;
                             }
                         }
                     }
