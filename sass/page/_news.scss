@@ -264,11 +264,15 @@
                     outline: none;
                     position: relative;
                     bottom: .5rem;
+                    transition: 1s ease .25s;
                     cursor: pointer;
                     &:active,&:focus,
                     &:link,&:visited{
                         border:none;
                         outline: none; 
+                    }
+                    &:hover{
+                        background-size: 2rem;
                     }
                 }
                 &__tag{
