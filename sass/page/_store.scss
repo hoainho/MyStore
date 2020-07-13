@@ -417,19 +417,14 @@
                     place-content: space-between;
                     &--list{
                         height: 100%;
-                        
-                        &_item
-                        {
-
-                        }
                         &_multi{
-                            background-color: rgba($color-divider, .1) !important;
+                            background-color: $color-white ;
                             border-radius: 50% !important;
-                            color: $color-primary !important;
+                            color: $color-primary ;
+                            border: 1px solid;
                             &:hover{
-                                color: $color-white !important;       
-                                background: rgb(255,126,0) !important;
-                                background: radial-gradient(circle, rgba(255,126,0,1) 8%, rgba(255,126,0,1) 44%, rgba(255,126,0,0) 44%, rgba(255,126,0,1) 66%, rgba(255,126,0,1) 77%, rgba(255,126,0,1) 95%)  !important;
+                                color: $color-white ;       
+                                background: $color-primary ;
                             }
                             &::before{
                                 content: "\f00a";
@@ -442,13 +437,13 @@
                             }
                         }
                         &_single{ 
-                            background-color: rgba($color-divider, .1) !important;
-                            color: $color-primary !important;
+                            background-color: $color-white;
+                            color: $color-primary ;
                             border-radius: 50% !important;
+                            border: 1px solid;
                             &:hover{
-                                color: $color-white !important;       
-                                background: rgb(255,126,0) !important;
-                                background: radial-gradient(circle, rgba(255,126,0,1) 8%, rgba(255,126,0,1) 44%, rgba(255,126,0,0) 44%, rgba(255,126,0,1) 66%, rgba(255,126,0,1) 77%, rgba(255,126,0,1) 95%)  !important;
+                                color: $color-white ;       
+                                background:$color-primary ;
                             }
                             &::before{
                                 content: "\f0c9";
@@ -487,8 +482,8 @@
             }
             &_content{
                 background-image: url(../../img/backgroundtech2.png);
-                        background-size: cover;
-                        background-repeat:no-repeat; 
+                background-size: cover;
+                background-repeat:no-repeat; 
                 &__box{
                     margin-bottom:1rem;
                     border-bottom: 1px solid rgba($color-divider, .1);
@@ -542,6 +537,10 @@
                     }
                 }
 
+            }
+            &_storage{
+                position: relative;
+                height: auto;
             }
         }
     }

@@ -259,6 +259,14 @@ $('.product-tab--container_tittle__item').click(
 
 });
 $(document).ready(function(){
+  $('.store-main--container_menu-options--list_link').click(
+    function(){ 
+      $('.store-main--container_menu-options--list_link').removeClass('active-products'),
+      $(this).addClass('active-products')
+    });
+  
+  });
+$(document).ready(function(){
   $('.product-tab--container_tittle__link').click(
     function(){ 
       $('.product-tab--container_tittle__link').removeClass('active-tab--link'),
