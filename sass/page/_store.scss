@@ -367,7 +367,7 @@
                     flex-direction: column;
                     justify-content: center;
                     justify-items: center;
-                    z-index: 2;
+                    z-index: 0;
                     &-slogan{
                         width: 100%;
                         text-align: center;
@@ -481,14 +481,16 @@
                 }
             }
             &_content{
-                background-image: url(../../img/backgroundtech2.png);
-                background-size: cover;
-                background-repeat:no-repeat; 
+                
                 &__box{
                     margin-bottom:1rem;
                     border-bottom: 1px solid rgba($color-divider, .1);
                     padding-bottom: 1rem;
+                    
                     &-self{
+                        background-image: url(../../img/bgproducttab.png);
+                        background-size: contain;
+                        background-repeat:no-repeat; 
                         height: 40vh;
                         &:nth-last-child(-n+6){
                             border-right: 1px solid rgba($color-divider, .1);
@@ -539,8 +541,11 @@
                 &__single{
                     position: relative;
                     width: 100%;
-                    padding-bottom: 2rem;
+                    padding:2rem 0;
                     border-bottom: 1px solid rgba($color-divider, .1);
+                    background-image: url(../../img/backgroundtech2.png);
+                    background-size: cover;
+                    background-repeat:no-repeat; 
                     &:hover &-pic--details_B{
                             display: block;
                         }
