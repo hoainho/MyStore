@@ -63,6 +63,12 @@ body {
   right: 6rem;
   top: 3rem; }
 
+.width-100 {
+  width: 100%; }
+
+.left-0 {
+  left: 0 !important; }
+
 .bg-divider {
   background-color: rgba(255, 126, 0, 0.2) !important;
   color: #fff; }
@@ -382,6 +388,35 @@ body {
                 .navbar-content--header_main__features___control-cart--storage_container__content-box--control {
                   display: flex;
                   flex-direction: column; }
+                  .navbar-content--header_main__features___control-cart--storage_container__content-box--control_setting {
+                    color: rgba(36, 36, 36, 0.8); }
+                    .navbar-content--header_main__features___control-cart--storage_container__content-box--control_setting:hover {
+                      color: #ff7e00;
+                      transform: scale(1.1); }
+                  .navbar-content--header_main__features___control-cart--storage_container__content-box--control_delete {
+                    color: rgba(36, 36, 36, 0.8); }
+                    .navbar-content--header_main__features___control-cart--storage_container__content-box--control_delete:hover {
+                      color: #ff7e00;
+                      transform: scale(1.1); }
+              .navbar-content--header_main__features___control-cart--storage_container__control {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; }
+                .navbar-content--header_main__features___control-cart--storage_container__control-price {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between; }
+                  .navbar-content--header_main__features___control-cart--storage_container__control-price--tittle {
+                    color: #242424;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    font-family: serif; }
+                  .navbar-content--header_main__features___control-cart--storage_container__control-price--value {
+                    color: #ff7e00;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    font-family: serif; }
             .navbar-content--header_main__features___control-search {
               position: relative;
               left: 0;
