@@ -6,13 +6,12 @@
     margin-top: 3rem;
     &--top{
         margin-top: 0rem !important;
-        bottom: 3rem !important;
+        bottom: 4rem !important;
     }
     &--container{
         margin: 0 10rem;
         &_box{
             pad: 0 .5rem;
-                
         }
         &_bestprice{
             display: flex;
@@ -120,7 +119,6 @@
                 top: 1% !important;
                 bottom: 1% !important;
             }
-           
             &__pic{
                 position: relative;
                 width: 31%;
