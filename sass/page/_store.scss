@@ -336,6 +336,7 @@
             }
         }
         &--container{
+            
             &_banner{
                     background: linear-gradient(-45deg, $color-divider, $color-white, $color-divider,transparent);
                     animation: gradient 10s ease infinite;
@@ -481,16 +482,17 @@
                 }
             }
             &_content{
-                
+                background-image: url(../../img/bgproducttab.png);
+                    background-size: cover;
+                    background-repeat:repeat; 
                 &__box{
                     margin-bottom:1rem;
                     border-bottom: 1px solid rgba($color-divider, .1);
                     padding-bottom: 1rem;
                     
+                            
                     &-self{
-                        background-image: url(../../img/bgproducttab.png);
-                        background-size: contain;
-                        background-repeat:no-repeat; 
+                        
                         height: 40vh;
                         &:nth-last-child(-n+6){
                             border-right: 1px solid rgba($color-divider, .1);

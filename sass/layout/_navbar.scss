@@ -209,6 +209,99 @@
                                     color: $color-divider;
                                 }
                             }
+                            &--storage{
+                                &_container{
+                                    &__header{
+                                        &-box{
+                                            display: flex;
+                                            flex-direction: row;
+                                            &--details{
+                                                font-size: 1.5rem;
+                                                font-weight: 900;
+                                                font-family: serif;
+                                                color: $color-textdark;
+                                                -webkit-text-stroke: 1px $color-textdark;
+                                            }
+                                            &--numbers{
+                                                position: relative;
+                                                top: 0.5rem;
+                                                color: rgba($color-divider, .3);
+                                                font-family: serif;
+                                                font-style: italic;
+                                            }
+                                        }
+                                    }
+                                    &__content{
+                                        &-box{
+                                            display: flex;
+                                            flex-direction: row;
+                                            &--pic{
+                                                width: 25%;
+                                                &_details{
+                                                    position: relative;
+                                                    width: 100%;
+                                                }
+                                            }
+                                            &--description{
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: flex-start;
+                                                width: 70%;
+                                                &_name{
+                                                    font-size: 1rem;
+                                                    font-weight: 900;
+                                                    font-family: fantasy;
+                                                    padding-left: 1rem;
+                                                    border-left: .4rem solid $color-primary;
+                                                    text-align: left;
+                                                    color: rgba($color-textdark , .8);
+                                                }
+                                                &_price{
+                                                    padding-left: 1rem;
+                                                    border-left: .4rem solid $color-primary;
+                                                    text-align: left;
+                                                    color: rgba($color-primary, .8);
+                                                    margin-bottom: .5rem;
+                                                    font-style: italic;
+                                                }
+                                                &_numbers{
+                                                    padding-left: 1rem;
+                                                    border-left: .4rem solid $color-primary;
+                                                    text-align: left;
+                                                    color: rgba($color-textdark , .8);
+                                                    &__details{
+                                                        color: $color-background;
+                                                    }   
+                                                }
+                                            }
+                                            &--control{
+                                                display: flex;
+                                                flex-direction: column;
+                                                &_setting{
+                                                    &__details{
+
+                                                    }
+                                                }
+                                                &_delete{
+                                                    &__details{
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &__control{
+                                        &-price{
+                                            &--tittle{
+
+                                            }
+                                            &--value{
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         &-search{
                             position: relative;
