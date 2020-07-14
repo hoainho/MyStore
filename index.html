@@ -150,8 +150,8 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="navbar-content--header_main__features___control-cart">
-                                        <div class="navbar-content--header_main__features___control-cart--icon">
+                                    <div  class="navbar-content--header_main__features___control-cart">
+                                        <div data-toggle="modal" data-target="#exampleModalScrollable" class="navbar-content--header_main__features___control-cart--icon ">
                                             <i class="fas fa-cart-plus navbar-content--header_main__features___control-cart--icon_details"></i>
                                             <span class="navbar-content--header_main__features___control-cart--icon_numbers">
                                                 0
@@ -165,6 +165,62 @@
                                                 0.000VND
                                             </span>
                                         </span>
+  
+                                        <!-- Modal -->
+                                        <div class="modal fade navbar-content--header_main__features___control-cart--storage" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" >
+                                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                            <div class="modal-content navbar-content--header_main__features___control-cart--storage_container">
+                                                <div class="modal-header navbar-content--header_main__features___control-cart--storage_container__header">
+                                                    <div class="navbar-content--header_main__features___control-cart--storage_container__header-box">
+                                                        <h5 class="modal-title navbar-content--header_main__features___control-cart--storage_container__header-box--details" id="exampleModalScrollableTitle ">Giỏ Hàng</h5>
+                                                        <span class="navbar-content--header_main__features___control-cart--storage_container__header-box--numbers">(1 sản phẩm )</span>
+                                                    </div>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body navbar-content--header_main__features___control-cart--storage_container__content">
+                                                    <div class="navbar-content--header_main__features___control-cart--storage_container__content-box">
+                                                        <div class="navbar-content--header_main__features___control-cart--storage_container__content-box--pic">
+                                                            <img src="img/mouse2A.png" alt="" class="navbar-content--header_main__features___control-cart--storage_container__content-box--pic_details">
+                                                        </div>
+                                                        <div class="navbar-content--header_main__features___control-cart--storage_container__content-box--description">
+                                                            <h6 class="navbar-content--header_main__features___control-cart--storage_container__content-box--description_name">
+                                                                Axtrix 2.0
+                                                            </h6>
+                                                            <span class="navbar-content--header_main__features___control-cart--storage_container__content-box--description_price">
+                                                                $1.800.000VND
+                                                            </span>
+                                                            <span class="navbar-content--header_main__features___control-cart--storage_container__content-box--description_numbers">
+                                                                SL : <span class="navbar-content--header_main__features___control-cart--storage_container__content-box--description_numbers__details special">1</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="navbar-content--header_main__features___control-cart--storage_container__content-box--control">
+                                                            <span class="navbar-content--header_main__features___control-cart--storage_container__content-box--control_setting">
+                                                                <i class="fas fa-cog avbar-content--header_main__features___control-cart--storage_container__content-box--control_setting__details"></i>
+                                                            </span>
+                                                            <span class="navbar-content--header_main__features___control-cart--storage_container__content-box--control_delete">
+                                                                <i class="far fa-trash-alt avbar-content--header_main__features___control-cart--storage_container__content-box--control_delete__details"></i>
+                                                            </span>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer navbar-content--header_main__features___control-cart--storage_container__control">
+                                                    <div class="navbar-content--header_main__features___control-cart--storage_container__control-price">
+                                                        <h4 class="navbar-content--header_main__features___control-cart--storage_container__control-price--tittle">
+                                                            Total :
+                                                        </h4>
+                                                        <span class="navbar-content--header_main__features___control-cart--storage_container__control-price--value">
+                                                            $1.800.000VND
+                                                        </span>
+                                                    </div>
+                                                    <button class="product-tab--container_content__category___product-button--card">Thanh Toán</button>
+                                                    <button class="product-tab--container_content__category___product-button--card bg-divider"> Chỉnh sửa</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -1432,7 +1488,7 @@
                     </div>
                 </div>
                 <!-- PRODUCT-SPECIAL  -->
-                <div class="product-special">
+                <div class="product-special product-special--top">
                     <div class="row product-special--container">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 product-special--container_box">
                             <div class="product-special--container_bestprice">

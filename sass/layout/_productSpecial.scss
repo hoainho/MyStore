@@ -4,6 +4,10 @@
     background-size: 7rem;
     background-repeat: no-repeat;
     margin-top: 3rem;
+    &--top{
+        margin-top: 0rem !important;
+        bottom: 3rem !important;
+    }
     &--container{
         margin: 0 10rem;
         &_box{
