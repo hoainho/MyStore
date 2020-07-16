@@ -3962,12 +3962,19 @@ html * {
 
 .account-tittle {
   position: relative;
-  left: 45%; }
+  left: 44%;
+  width: 12%;
+  padding-top: .5rem;
+  border: 1px solid #ff7e00;
+  box-shadow: 3px 3px 0 0 #ff7e00;
+  border-radius: 10px; }
   .account-tittle--details {
     color: #242424;
     font-family: serif;
     font-size: 2rem;
-    font-weight: 900; }
+    font-weight: 900;
+    width: 100%;
+    text-align: center; }
 
 .account-content {
   margin: 2rem 30rem;
@@ -3978,7 +3985,26 @@ html * {
   background-image: url(../../img/backgroundtech.png);
   background-size: 35rem;
   background-repeat: no-repeat;
-  background-position: 0rem 2rem; }
+  background-position: 0rem 5rem; }
+  .account-content--forgetpassword {
+    display: flex;
+    margin: 0px 11rem;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../img/bgbutton.png);
+    background-position-x: center;
+    justify-content: center; }
+    .account-content--forgetpassword_link {
+      font-size: 1rem;
+      font-weight: bold;
+      font-style: italic;
+      color: #fff; }
+      .account-content--forgetpassword_link:active, .account-content--forgetpassword_link:visited, .account-content--forgetpassword_link:focus {
+        text-decoration: none; }
+      .account-content--forgetpassword_link:hover {
+        text-decoration: none;
+        color: #242424; }
 
 .account-signup {
   border-radius: 30px;
