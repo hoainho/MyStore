@@ -93,6 +93,8 @@ window.onload = function(){
               }
               else{
                 LGnavbar.style.position ='relative';
+                LGnavbar.style.top = '0rem';
+                LGnavbar.style.left = '0rem';
                 LGnavbar.style.bottom ='8%';
                 LGnavbar.style.width ='100%';
                 LGnavbar.style.height ='100%';
