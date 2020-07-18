@@ -3,9 +3,9 @@ import '../../../sass/page/about.scss';
 function About(){
     return(
 <div class="page-wrapper">
-         <!-- BANNER -->
+         {/* <!-- BANNER --> */}
         <div class="banner"></div>
-         <!-- NAVBAR -->
+         {/* <!-- NAVBAR --> */}
         <div class="navbar" id="navbar">
             <div class="navbar-content">
                 <div class="navbar-content--top">
